@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "task": "B01",
+  "phase": "preparation review only",
+  "verdict": "PASS",
+  "reviewer": "/root/h01_author",
+  "author": "/root",
+  "reviewed_candidate": "c82b065f30309c5a8f3db3e81f8addfce7b8ad30",
+  "base_commit": "043e64ceb745a323f9a332cc02fae2993388fabe",
+  "requirements_commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+  "hardware_main": "340697d6713a671e9e01b0dc874ec999ab071601",
+  "recorded_utc": "2026-10-18T20:13:08.520335+00:00",
+  "preparation_files": [
+    {
+      "path": "docs/restart/B01/brief.md",
+      "bytes": 10843,
+      "sha256": "a6ac96dc92b33815d4230f43c0a1b25c84cfe6ac523d3faf160fe79fc55c9eaa"
+    },
+    {
+      "path": "docs/restart/B01/source-audit.json",
+      "bytes": 11437,
+      "sha256": "f2f00e59a6f02a164db82a1a3219c26340221253c37af22a5ffb4298502bbd51"
+    },
+    {
+      "path": "docs/restart/B01/acceptance-plan.json",
+      "bytes": 4549,
+      "sha256": "c1f084292488fa26c76b3ed06927cb65c34259986905af35467327a304d42dba"
+    }
+  ],
+  "parent_acceptance_unchanged": true,
+  "source_binding_count": 25,
+  "source_bindings_exact": true,
+  "findings": [],
+  "criterion_preparation_results": [
+    {
+      "index": 0,
+      "verdict": "PASS",
+      "parent_acceptance_completed": false
+    },
+    {
+      "index": 1,
+      "verdict": "PASS",
+      "parent_acceptance_completed": false
+    },
+    {
+      "index": 2,
+      "verdict": "PASS",
+      "parent_acceptance_completed": false
+    },
+    {
+      "index": 3,
+      "verdict": "PASS",
+      "parent_acceptance_completed": false
+    }
+  ],
+  "actual_electrical_pinning": "pending H04; not waived and cannot mark B01 complete",
+  "authorized_next_scope": "The accepted brief permits documentary decisions only; this review selects no dependency and authorizes no executable SDK source.",
+  "required_next_evidence": [
+    "Actual upstream interface/source/license review and concrete generic consumers",
+    "Actual API/dependency and lifecycle decisions with unresolved owners",
+    "H01/S04/H04 reconciliation; H04 actual electrical contract before literal B01 completion",
+    "Distinct exact final substantive review; A02 current canonical path reconciliation before integration",
+    "B02/B03 actual standalone non-Nostr and physical service/owner/release proof"
+  ],
+  "checks": [
+    {
+      "command": "python3 docs/restart/B01/preparation-review/probes/check_bindings.py --sdk <board-sdk repository> --core <nsealr repository> --hardware <hardware repository> --output docs/restart/B01/preparation-review/logs/bindings.json",
+      "exit_code": 0,
+      "result": "25 exact source bindings; four verbatim criteria; exact three-file preparation diff and diff-check pass",
+      "scope": "Read-only Git integrity, not API/hardware acceptance"
+    }
+  ],
+  "review_artifacts": [
+    {
+      "path": "docs/restart/B01/preparation-review/report.md",
+      "bytes": 8683,
+      "sha256": "ee153589095af9df610e3782280a00fd14dbb1eead69cf93f0dd49dd8f2c5ef4"
+    },
+    {
+      "path": "docs/restart/B01/preparation-review/probes/check_bindings.py",
+      "bytes": 3747,
+      "sha256": "997707327e21830ee01a0ca5d72c299585c055d8f49e62a684387a9a262cd6b0"
+    },
+    {
+      "path": "docs/restart/B01/preparation-review/logs/bindings.json",
+      "bytes": 10351,
+      "sha256": "508d45dbb4d40a91f8ec0324ca84e442f67765a258521b3c346bc03a43dd6d7c"
+    }
+  ],
+  "product_tests": "not rerun; documentary-only preparation",
+  "source_extraction_performed": false,
+  "dependency_selected": false,
+  "hardware_admitted": false,
+  "physical_work_performed": false,
+  "canonical_graph_modified": false,
+  "author_preparation_modified": false
+}
