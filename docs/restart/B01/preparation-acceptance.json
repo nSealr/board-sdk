@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "task": "B01",
+  "phase": "coordinator accepts bounded documentary preparation",
+  "observed_utc": "2026-10-18T20:14:31.300240+00:00",
+  "author_and_coordinator": "/root",
+  "candidate_commit": "c82b065f30309c5a8f3db3e81f8addfce7b8ad30",
+  "distinct_review": {
+    "reviewer": "/root/h01_author",
+    "commit": "09bd394a6fc1502f192ee84cd99ad6ceb5e40f07",
+    "path": "docs/restart/B01/preparation-review/review.json",
+    "sha256": "71b83dfec402ff8194791368085d3dab322a94507c78c5be39662d955fc548fd",
+    "report_sha256": "ee153589095af9df610e3782280a00fd14dbb1eead69cf93f0dd49dd8f2c5ef4",
+    "verdict": "PASS_preparation_only"
+  },
+  "byte_exact_review_copy_commit": "779d9a7d1114dcbdcb7eaae1f39af0ef2314add5",
+  "coordinator_checks": {
+    "preparation_bindings": 3,
+    "review_file_bindings": 4,
+    "review_only_delta": 4,
+    "remote_heads_exact": true
+  },
+  "authorized_next_scope": [
+    "Write api-and-dependencies.md, lifecycle.md, source-register.json and result.json under docs/restart/B01/ against the accepted brief.",
+    "Primary source survey/semantic review and per-criterion pending outcomes; preserve failures and exact version-level source origin.",
+    "No dependency/crate/driver selection or executable SDK source under this documentary scope."
+  ],
+  "conditions": [
+    "Keep all four parent criteria unchanged and do not declare B01 complete without actual H04 electrical pinning.",
+    "Reconcile exact H01/S04 source and actual adopted A02 normative paths before integration; proposals/current manual source are not hardware/protocol admission.",
+    "Keep Board SDK independent of Nostr and absent hostile-application isolation; no fabricated extraction, unused scaffold or universal reset promise.",
+    "Obtain distinct exact final substantive review; physical/standalone service and lifecycle proof remains B02/B03 and the hardware owners.",
+    "SDK main043 and other frozen A02 source mains remain held. Canonical coordinator graph reconciliation follows actual A02 adoption."
+  ],
+  "not_claimed": [
+    "No production API/driver, dependency selection, source extraction, physical work, hardware admission or B01 completion."
+  ]
+}
