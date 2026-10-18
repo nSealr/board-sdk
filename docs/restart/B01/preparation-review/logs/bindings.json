@@ -1,0 +1,288 @@
+{
+  "candidate": "c82b065f30309c5a8f3db3e81f8addfce7b8ad30",
+  "base": "043e64ceb745a323f9a332cc02fae2993388fabe",
+  "requirements": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+  "preparation_files": {
+    "brief.md": {
+      "bytes": 10843,
+      "sha256": "a6ac96dc92b33815d4230f43c0a1b25c84cfe6ac523d3faf160fe79fc55c9eaa"
+    },
+    "source-audit.json": {
+      "bytes": 11437,
+      "sha256": "f2f00e59a6f02a164db82a1a3219c26340221253c37af22a5ffb4298502bbd51"
+    },
+    "acceptance-plan.json": {
+      "bytes": 4549,
+      "sha256": "c1f084292488fa26c76b3ed06927cb65c34259986905af35467327a304d42dba"
+    }
+  },
+  "source_bindings": [
+    {
+      "repository": "nSealr/board-sdk",
+      "commit": "043e64ceb745a323f9a332cc02fae2993388fabe",
+      "path": "AGENTS.md",
+      "mode": "100644",
+      "blob": "fefca847191bdbbd92cc2cca1edf1f72e37a46cb",
+      "bytes": 485,
+      "sha256": "08dba923fd00648b93caa970f5f793af0533bd356ab99aaec3b26227f6a752a5",
+      "matches": true
+    },
+    {
+      "repository": "nSealr/board-sdk",
+      "commit": "043e64ceb745a323f9a332cc02fae2993388fabe",
+      "path": "README.md",
+      "mode": "100644",
+      "blob": "f11f996ca41a395456517d7743a8bf37e499e7ac",
+      "bytes": 2397,
+      "sha256": "9febbb251ca26b32eaf49e263108341aa0a0533b565689a005af1b1cba58988c",
+      "matches": true
+    },
+    {
+      "repository": "nSealr/board-sdk",
+      "commit": "043e64ceb745a323f9a332cc02fae2993388fabe",
+      "path": "LICENSE",
+      "mode": "100644",
+      "blob": "29630bf8d9961a31609cd6ed9c256dfbddfca86f",
+      "bytes": 1076,
+      "sha256": "25568053e878aa2d966a2c7f48d312fc12f9e7d115fed66728a8b1075d866b45",
+      "matches": true
+    },
+    {
+      "repository": "nSealr/board-sdk",
+      "commit": "043e64ceb745a323f9a332cc02fae2993388fabe",
+      "path": ".gitignore",
+      "mode": "100644",
+      "blob": "6822b73123ddd074c7c6e0558a06b79221f2d0ae",
+      "bytes": 37,
+      "sha256": "36548cf34306cbd1cfe3e5d7767bd742f2bb38cbe9fac9c8ad09ac69d74e1fd2",
+      "matches": true
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "AGENTS.md",
+      "mode": "100644",
+      "blob": "69f95f67ad5d837caaae2d88ebe822ad8e5f1cda",
+      "bytes": 2703,
+      "sha256": "bb2487e1ddf719f2c49621bc6018b6505beb1d9145805e3a157d9bab37c45020",
+      "matches": true
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "docs/restart/work-items.json",
+      "mode": "100644",
+      "blob": "d7abbae2dd7d779bd58d553097a5d0c75d4e3279",
+      "bytes": 417186,
+      "sha256": "c2e9520d16731f3769c7ff3ccbdb2df0ef1c053eae3c40d8afb7baae47cf3428",
+      "matches": true
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "docs/restart/development.md",
+      "mode": "100644",
+      "blob": "d5d44a79d2a499c571458763288b2b689e4a3566",
+      "bytes": 14256,
+      "sha256": "e47d96d5350ff9a60c7b53efb5005e09e9e4e99dddb81f20371bbfd8fe88dee9",
+      "matches": true
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "docs/restart/architecture.md",
+      "mode": "100644",
+      "blob": "b0eaee08365a39f1c0731cda6e2d3282b4a23607",
+      "bytes": 4852,
+      "sha256": "855730fb0a801f411616869ffc01640eb46522d7bb27bf63747fa2fa7f290b2e",
+      "matches": true
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "docs/restart/repositories.md",
+      "mode": "100644",
+      "blob": "8f4866cadbc353004988aaed9c8b53cd2f859499",
+      "bytes": 5146,
+      "sha256": "37d7efc19f65170119ecb4743f9f041c7df008c4204879004ab5aec2e5e3bb48",
+      "matches": true
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "docs/restart/implementation/P01/requirements.md",
+      "mode": "100644",
+      "blob": "e35aa354a546f38422c1f17f1a32e4fc0c2b7fec",
+      "bytes": 17199,
+      "sha256": "f8635e2941895b7d4043e769c9b73e2064036b1358e5f4266854b074a9b81326",
+      "matches": true
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "docs/restart/implementation/P01/threat-models.md",
+      "mode": "100644",
+      "blob": "3c8f03982ca59fd43eec83bc4cd347e0b6f243b7",
+      "bytes": 8532,
+      "sha256": "ebf8d5a821eb4843d7b961840a4b21cc74a2997dfa5b9e15f0cc6907586ffee0",
+      "matches": true
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "docs/restart/implementation/A01/disposition.md",
+      "mode": "100644",
+      "blob": "254f5b10bc05aa55efb44032d2ae7dde999942ce",
+      "bytes": 10522,
+      "sha256": "a7a28a5ffe953c30d625b893b13e1561da1448909b0fa174c9c055ab27fab7b5",
+      "matches": true
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "docs/restart/implementation/A01/result.json",
+      "mode": "100644",
+      "blob": "7497ccfdaf187dd023a7c68a1a250f15a9a5bb09",
+      "bytes": 3104,
+      "sha256": "e26ec4fd7d3a34c09039af4b9e0ebfe68eb1b6f9ec8036b275b77ac1d463ba7f",
+      "matches": true
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "docs/restart/implementation/S02/entropy-contract.md",
+      "mode": "100644",
+      "blob": "8e4383bb3c9dff8f9d81776e7b761260fe6dd3c4",
+      "bytes": 4710,
+      "sha256": "a0883cbd920b85ab1db71e619b2c503d7a84137761ab60d8913e5353c9ce0916",
+      "matches": true
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "crates/nsealr-core/Cargo.toml",
+      "mode": "100644",
+      "blob": "d1e390044d1ee304b7772fad3589a728bc697adb",
+      "bytes": 652,
+      "sha256": "628a4f6591a0b6b5d8406bad3dc849e304f01d4a54394c530809967ebe0728e4",
+      "matches": true
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "crates/nsealr-core/src/lib.rs",
+      "mode": "100644",
+      "blob": "b191031aff918e64dfbc5bf0a6fa443f65108f48",
+      "bytes": 3870,
+      "sha256": "6da880388eb54a911589d795abbb86dbd4b30f038413583901bb541e81d95e18",
+      "matches": true
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "crates/nsealr-core/src/nip19.rs",
+      "mode": "100644",
+      "blob": "862ec3e4f50d2be17c10a713da16f4cc9f64aa68",
+      "bytes": 18769,
+      "sha256": "738499a70213b0c8aeb2299b47ac7c8a7839cd7f6b5f4316a37448c9878484f0",
+      "matches": true
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "crates/nsealr-core/src/session/keyring.rs",
+      "mode": "100644",
+      "blob": "57a148a360e3e9b024256d8ab3817da0ed340dd8",
+      "bytes": 23857,
+      "sha256": "8cb2541f8092a102c81eb3c5dcf971a527fcf8d2247b911c33843bdfa8430003",
+      "matches": true
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "crates/nsealr-core/src/review/buttons.rs",
+      "mode": "100644",
+      "blob": "bbe4681a7b996a4ee198d5d9ae98918d28970bea",
+      "bytes": 5575,
+      "sha256": "6cfae0d225fedb6327ed68f2ef48a30e7a24b56a83d06f5be6ab28c0fb298895",
+      "matches": true
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "crates/nsealr-core/src/review/display.rs",
+      "mode": "100644",
+      "blob": "f97ea1f590271e9abd592793939c53fff85d2284",
+      "bytes": 27649,
+      "sha256": "55c160f6e17cd672cb93a5d407656d879061564c8201e9065cfee93db24ee74d",
+      "matches": true
+    },
+    {
+      "repository": "nSealr/hardware",
+      "commit": "340697d6713a671e9e01b0dc874ec999ab071601",
+      "path": "README.md",
+      "mode": "100644",
+      "blob": "a50128147f8fb78e4940998f3542efb825e6e7fa",
+      "bytes": 2025,
+      "sha256": "aee6ee7bead9617902361bf6c9cbf8065cd5010fe0259d6c2698d03bfa1490ce",
+      "matches": true
+    },
+    {
+      "repository": "nSealr/hardware",
+      "commit": "e39015ae20efd37d509054f4b98ddd68ee7e98c9",
+      "path": "docs/restart/H01/brief.md",
+      "mode": "100644",
+      "blob": "d98caf57ccba01250ba129923be96a5674210414",
+      "bytes": 18448,
+      "sha256": "89f5e3487d669e1555bf07f8207ddc8cf783f554b72a7f02785fffd5deccf5e8",
+      "matches": true
+    },
+    {
+      "repository": "nSealr/hardware",
+      "commit": "e39015ae20efd37d509054f4b98ddd68ee7e98c9",
+      "path": "docs/restart/H01/result.json",
+      "mode": "100644",
+      "blob": "e5ca40ec0d628568616e680c2b716cba790d988b",
+      "bytes": 13218,
+      "sha256": "5c10be2874d6eb6eb194f1c71259a95f3197fb7aef79b085064ee8a601b7836e",
+      "matches": true
+    },
+    {
+      "repository": "nSealr/hardware",
+      "commit": "e39015ae20efd37d509054f4b98ddd68ee7e98c9",
+      "path": "docs/restart/H01/option-comparison.md",
+      "mode": "100644",
+      "blob": "c24764a703e10e4d3f1812d1df0d91daa70ea43a",
+      "bytes": 16352,
+      "sha256": "e674810963b4fafa080c78ca950d5ae68e5bc61d701ddbe9208e897907f6572d",
+      "matches": true
+    },
+    {
+      "repository": "nSealr/hardware",
+      "commit": "9d5ed3baf936157a26b55bf42e51da4ce6d240c2",
+      "path": "docs/restart/H01/independent-review-current-manual/report.md",
+      "mode": "100644",
+      "blob": "4917191a755e899e1c987f6255786aed9eefd933",
+      "bytes": 24416,
+      "sha256": "24fa08a104dc9f705026b387d131a16423c14eb2088697ac17aa33a22adf2275",
+      "matches": true
+    }
+  ],
+  "parent_acceptance_exact": true,
+  "parent_criterion_count": 4,
+  "base_tree": [
+    ".gitignore",
+    "AGENTS.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "candidate_changes": [
+    "A\tdocs/restart/B01/acceptance-plan.json",
+    "A\tdocs/restart/B01/brief.md",
+    "A\tdocs/restart/B01/source-audit.json"
+  ],
+  "diff_check_exit_code": 0,
+  "python": "3.13.5",
+  "git": "git version 2.47.3",
+  "scope": "Git integrity only; substantive verdict is in report.md. No hardware/API acceptance."
+}
