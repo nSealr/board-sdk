@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "task": "B01",
+  "phase": "preparation for documentary implementation; no executable source",
+  "input_commits": {
+    "nSealr/board-sdk": "043e64ceb745a323f9a332cc02fae2993388fabe",
+    "nSealr/nsealr": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+    "nSealr/hardware": "340697d6713a671e9e01b0dc874ec999ab071601"
+  },
+  "preparation_files": [
+    "docs/restart/B01/brief.md",
+    "docs/restart/B01/source-audit.json",
+    "docs/restart/B01/acceptance-plan.json"
+  ],
+  "acceptance": [
+    {
+      "index": 0,
+      "parent_criterion": "Board SDK exposes buses/power/entropy/key handles/algorithms/storage/display/input/lifecycle without Nostr schemas or policy.",
+      "planned_evidence": [
+        "api-and-dependencies.md service/owner/input/output/error/lifetime table",
+        "exact upstream source/interface/license register",
+        "reusable-source disposition with actual consumers"
+      ],
+      "negative_review_questions": [
+        "Does any generic service depend on Nostr semantics?",
+        "Does a trait/boolean/mock falsely claim hardware support, entropy quality, SE algorithm/non-exportability or consent?",
+        "Can hidden blocking/cancellation or partial output violate the documented failure contract?"
+      ]
+    },
+    {
+      "index": 1,
+      "parent_criterion": "Start with libraries in one trusted firmware image; document absence of inter-application security isolation.",
+      "planned_evidence": [
+        "one-image trust and dependency decision",
+        "explicit absence of hostile-application isolation",
+        "standalone consumer proof only after a separately accepted real implementation scope"
+      ],
+      "negative_review_questions": [
+        "Does ordinary Rust privacy/library linkage get mistaken for isolation from malicious firmware?",
+        "Is an unused crate/plugin/process framework introduced without a real consumer?"
+      ]
+    },
+    {
+      "index": 2,
+      "parent_criterion": "Pin electrical contracts from hardware and design version compatibility without circular or sibling-path dependencies.",
+      "planned_evidence": [
+        "exact electrical/configuration compatibility and source-pinning contract",
+        "current unresolved H04 inputs and per-criterion pending disposition when actual pinning is impossible",
+        "acyclic repository dependency and standalone checkout rules"
+      ],
+      "negative_review_questions": [
+        "Were inherited pins/rails/connector details guessed or declared approved?",
+        "Can unknown/incompatible tuple succeed through defaults, a sibling path or circular dependency?",
+        "Was this parent criterion falsely closed without the required actual hardware contract?"
+      ]
+    },
+    {
+      "index": 3,
+      "parent_criterion": "Development, owner-secured and product-qualified states have explicit transition limits and secret-reset requirements.",
+      "planned_evidence": [
+        "lifecycle.md transition/authority/residual-state/reset/fault table",
+        "explicit S04/H01 dependencies and physical proof owners",
+        "MCU owner and vendor SE rights/immutable object distinctions"
+      ],
+      "negative_review_questions": [
+        "Does reset erase only MCU flash while privileged SE state survives?",
+        "Are finite budgets, irreversible ownership, lost credentials, rollback or partial reset hidden?",
+        "Can product qualification be minted by firmware or a support flag?"
+      ]
+    }
+  ],
+  "checks": [
+    "Verify every source audit row against its exact Git object (mode/blob/bytes/SHA256) and all parent criteria byte-for-byte against f2 graph.",
+    "Review dependency/service/lifecycle semantics and primary source locators; preserve unknown/unperformed outcomes.",
+    "Check preparation-only diff scope and git diff --check.",
+    "No product suite, host mocks or prose existence tests required for documentary-only source/specification work."
+  ],
+  "integration_conditions": [
+    "Distinct preparation acceptance before implementation.",
+    "Distinct exact final substantive review; changed content invalidates affected review.",
+    "Actual A02 path/graph and current H01/S04 input reconciliation before integration.",
+    "Only canonical graph may record state; incomplete electrical pinning cannot be reported as B01 completion."
+  ],
+  "excluded": [
+    "No production/driver/API crate or dependency installation.",
+    "No hardware support/release/physical admission, purchase, fuse, manufacturer contact or secret use."
+  ]
+}
