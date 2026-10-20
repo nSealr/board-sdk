@@ -1,0 +1,285 @@
+{
+  "schema_version": 1,
+  "candidate_commit": "27308eb7eb80bce22f411f9d40da159d901b7087",
+  "base_commit": "8377f9264ca0c426dad0d79578c01be2e1d32509",
+  "recorded_utc": "2026-10-20T09:39:30.474181+00:00",
+  "purpose": "Independent identity/source probe, not SDK behavioral or physical acceptance",
+  "python": "3.13.5",
+  "network_refresh": true,
+  "candidate_delta": [
+    "A\tdocs/restart/B01/api-and-dependencies.md",
+    "A\tdocs/restart/B01/lifecycle.md",
+    "A\tdocs/restart/B01/result.json",
+    "A\tdocs/restart/B01/source-register.json"
+  ],
+  "candidate_bindings": [
+    {
+      "path": "docs/restart/B01/api-and-dependencies.md",
+      "bytes": 18006,
+      "sha256": "e73e689827570293d28a4f231e186ae1fc58110c244d1479e5f7a18dc575fc96"
+    },
+    {
+      "path": "docs/restart/B01/lifecycle.md",
+      "bytes": 12725,
+      "sha256": "cf8183c11031149596905f90ecc13d53d4b3acdaa8a04af0845fa57dd76edc2f"
+    },
+    {
+      "path": "docs/restart/B01/result.json",
+      "bytes": 6157,
+      "sha256": "4bf503b0c2e35937c87a94c3dbf48eaf52182bc0408f6f72801b0aa00f62c886"
+    },
+    {
+      "path": "docs/restart/B01/source-register.json",
+      "bytes": 42540,
+      "sha256": "10544de1339520e8c731adf2e6713a830c71e6d51caba605aee18ed806b7c15f"
+    }
+  ],
+  "canonical_criteria": {
+    "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+    "count": 4,
+    "byte_exact": true,
+    "parent_task_complete_claimed": false
+  },
+  "preparation_review_bindings": {
+    "commit": "09bd394a6fc1502f192ee84cd99ad6ceb5e40f07",
+    "verified": true
+  },
+  "git_bindings": {
+    "register_verified": 36,
+    "preparation_audit_verified": 25,
+    "mode_blob_path_bytes_sha256": true
+  },
+  "packages": [
+    {
+      "crate": "embedded-hal",
+      "version": "1.0.0",
+      "archive_sha256": "361a90feb7004eca4019fb28352a9465666b24f840f5c3cddf0ff13920590b89",
+      "inspected_members_verified": 12,
+      "existing_extracted_members_equal_archive": 10,
+      "license_body_members": [
+        "LICENSE-APACHE",
+        "LICENSE-MIT"
+      ],
+      "manifest_features_dependencies_license_repository_vcs_equal": true,
+      "exact_registry_version_checksum_equal": true
+    },
+    {
+      "crate": "embedded-hal-async",
+      "version": "1.0.0",
+      "archive_sha256": "0c4c685bbef7fe13c3c6dd4da26841ed3980ef33e841cddfa15ce8a8fb3f1884",
+      "inspected_members_verified": 9,
+      "existing_extracted_members_equal_archive": 7,
+      "license_body_members": [
+        "LICENSE-APACHE",
+        "LICENSE-MIT"
+      ],
+      "manifest_features_dependencies_license_repository_vcs_equal": true,
+      "exact_registry_version_checksum_equal": true
+    },
+    {
+      "crate": "embedded-io",
+      "version": "0.7.1",
+      "archive_sha256": "9eb1aa714776b75c7e67e1da744b81a129b3ff919c8712b5e1b32252c1f07cc7",
+      "inspected_members_verified": 11,
+      "existing_extracted_members_equal_archive": 9,
+      "license_body_members": [
+        "LICENSE-APACHE",
+        "LICENSE-MIT"
+      ],
+      "manifest_features_dependencies_license_repository_vcs_equal": true,
+      "exact_registry_version_checksum_equal": true
+    },
+    {
+      "crate": "embedded-io-async",
+      "version": "0.7.0",
+      "archive_sha256": "2564b9f813c544241430e147d8bc454815ef9ac998878d30cc3055449f7fd4c0",
+      "inspected_members_verified": 11,
+      "existing_extracted_members_equal_archive": 9,
+      "license_body_members": [
+        "LICENSE-APACHE",
+        "LICENSE-MIT"
+      ],
+      "manifest_features_dependencies_license_repository_vcs_equal": true,
+      "exact_registry_version_checksum_equal": true
+    },
+    {
+      "crate": "rand_core",
+      "version": "0.10.1",
+      "archive_sha256": "63b8176103e19a2643978565ca18b50549f6101881c443590420e4dc998a3c69",
+      "inspected_members_verified": 10,
+      "existing_extracted_members_equal_archive": 8,
+      "license_body_members": [
+        "LICENSE-APACHE",
+        "LICENSE-MIT"
+      ],
+      "manifest_features_dependencies_license_repository_vcs_equal": true,
+      "exact_registry_version_checksum_equal": true
+    },
+    {
+      "crate": "embedded-graphics-core",
+      "version": "0.4.0",
+      "archive_sha256": "ba9ecd261f991856250d2207f6d8376946cd9f412a2165d3b75bc87a0bc7a044",
+      "inspected_members_verified": 3,
+      "existing_extracted_members_equal_archive": 3,
+      "license_body_members": [],
+      "manifest_features_dependencies_license_repository_vcs_equal": true,
+      "exact_registry_version_checksum_equal": true
+    }
+  ],
+  "origin_correction": {
+    "stale_crate_level_origin": "https://github.com/rust-lang-nursery/rand",
+    "exact_version_origin": "https://github.com/rust-random/rand_core",
+    "preserved_historical_404_records": 2
+  },
+  "fresh_official_bodies": [
+    {
+      "kind": "archive",
+      "url": "https://static.crates.io/crates/embedded-hal/embedded-hal-1.0.0.crate",
+      "status": 200,
+      "bytes": 29801,
+      "sha256": "361a90feb7004eca4019fb28352a9465666b24f840f5c3cddf0ff13920590b89",
+      "byte_exact": true
+    },
+    {
+      "kind": "archive",
+      "url": "https://static.crates.io/crates/embedded-hal-async/embedded-hal-async-1.0.0.crate",
+      "status": 200,
+      "bytes": 11605,
+      "sha256": "0c4c685bbef7fe13c3c6dd4da26841ed3980ef33e841cddfa15ce8a8fb3f1884",
+      "byte_exact": true
+    },
+    {
+      "kind": "archive",
+      "url": "https://static.crates.io/crates/embedded-io/embedded-io-0.7.1.crate",
+      "status": 200,
+      "bytes": 16035,
+      "sha256": "9eb1aa714776b75c7e67e1da744b81a129b3ff919c8712b5e1b32252c1f07cc7",
+      "byte_exact": true
+    },
+    {
+      "kind": "archive",
+      "url": "https://static.crates.io/crates/embedded-io-async/embedded-io-async-0.7.0.crate",
+      "status": 200,
+      "bytes": 11731,
+      "sha256": "2564b9f813c544241430e147d8bc454815ef9ac998878d30cc3055449f7fd4c0",
+      "byte_exact": true
+    },
+    {
+      "kind": "archive",
+      "url": "https://static.crates.io/crates/rand_core/rand_core-0.10.1.crate",
+      "status": 200,
+      "bytes": 22833,
+      "sha256": "63b8176103e19a2643978565ca18b50549f6101881c443590420e4dc998a3c69",
+      "byte_exact": true
+    },
+    {
+      "kind": "upstream_license",
+      "url": "https://raw.githubusercontent.com/embedded-graphics/embedded-graphics/0873f47c99f1303dba6d916e06da52b4fa971a05/LICENSE-APACHE",
+      "status": 200,
+      "bytes": 10847,
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "byte_exact": true
+    },
+    {
+      "kind": "upstream_license",
+      "url": "https://raw.githubusercontent.com/embedded-graphics/embedded-graphics/0873f47c99f1303dba6d916e06da52b4fa971a05/LICENSE-MIT",
+      "status": 200,
+      "bytes": 1056,
+      "sha256": "4ed59ae6666cce57ee6865ed25e0acd4452bf95f5f4f081248b1a6e22eb609a4",
+      "byte_exact": true
+    },
+    {
+      "kind": "archive",
+      "url": "https://static.crates.io/crates/embedded-graphics-core/embedded-graphics-core-0.4.0.crate",
+      "status": 200,
+      "bytes": 37658,
+      "sha256": "ba9ecd261f991856250d2207f6d8376946cd9f412a2165d3b75bc87a0bc7a044",
+      "byte_exact": true
+    },
+    {
+      "kind": "upstream_source",
+      "url": "https://raw.githubusercontent.com/rust-embedded/embedded-hal/f8c79fee1df1900ee59e90160729edfa16a99b63/embedded-hal/src/spi.rs",
+      "status": 200,
+      "bytes": 20484,
+      "sha256": "c04a3f22c679f0f98f6f49e00bbc44dc72d1beba27aa4cc57afd17b2b872a828",
+      "byte_exact": true
+    },
+    {
+      "kind": "upstream_source",
+      "url": "https://raw.githubusercontent.com/rust-embedded/embedded-hal/f8c79fee1df1900ee59e90160729edfa16a99b63/embedded-hal/src/i2c.rs",
+      "status": 200,
+      "bytes": 15606,
+      "sha256": "28d44375daa30acf5488642948bda24a7030738a65f91727b9908cf7dfc3aad0",
+      "byte_exact": true
+    },
+    {
+      "kind": "upstream_source",
+      "url": "https://raw.githubusercontent.com/rust-embedded/embedded-hal/f8c79fee1df1900ee59e90160729edfa16a99b63/embedded-hal/src/delay.rs",
+      "status": 200,
+      "bytes": 1784,
+      "sha256": "05960325c846fa20f0fe07a2bba686039ceb05aed6e35e2f7f23c1915b724012",
+      "byte_exact": true
+    },
+    {
+      "kind": "upstream_source",
+      "url": "https://raw.githubusercontent.com/rust-embedded/embedded-hal/f8c79fee1df1900ee59e90160729edfa16a99b63/embedded-hal-async/src/spi.rs",
+      "status": 200,
+      "bytes": 7198,
+      "sha256": "983ac9da3a493452009e4c16bfb4774580d8253fbacc9611c03f398982e1d173",
+      "byte_exact": true
+    },
+    {
+      "kind": "upstream_source",
+      "url": "https://raw.githubusercontent.com/rust-embedded/embedded-hal/f8c79fee1df1900ee59e90160729edfa16a99b63/embedded-hal-async/src/i2c.rs",
+      "status": 200,
+      "bytes": 5493,
+      "sha256": "c0b9163d90d7f0b0d25a70ae03792c07fce1f20cf005e206ea82947854a7134f",
+      "byte_exact": true
+    },
+    {
+      "kind": "upstream_source",
+      "url": "https://raw.githubusercontent.com/rust-embedded/embedded-hal/21e547acd5c8fc7b26d9794f88c291dde912a788/embedded-io/src/lib.rs",
+      "status": 200,
+      "bytes": 24045,
+      "sha256": "1077dd3ed8cc4c44d2da1ef5b1e6f4322191b3e25c12407ace75df55b9083963",
+      "byte_exact": true
+    },
+    {
+      "kind": "upstream_source",
+      "url": "https://raw.githubusercontent.com/rust-embedded/embedded-hal/a926c2a65948a4f6aeddcd5d7f8f1049c1c54c95/embedded-io-async/src/lib.rs",
+      "status": 200,
+      "bytes": 9595,
+      "sha256": "bd7582aa2605be3d790e3bdaf3981307ef4be43444c610aa57a29b4b3139c752",
+      "byte_exact": true
+    },
+    {
+      "kind": "upstream_source",
+      "url": "https://raw.githubusercontent.com/rust-random/rand_core/5cd7df496d0bff1d95534ac8b66a2610f5bf7808/src/lib.rs",
+      "status": 200,
+      "bytes": 10386,
+      "sha256": "b4df43985896bf2f38e595f7574c4d7e0df1c562e40c6a92133d9eef1cc01908",
+      "byte_exact": true
+    },
+    {
+      "kind": "upstream_source",
+      "url": "https://raw.githubusercontent.com/rust-random/rand_core/5cd7df496d0bff1d95534ac8b66a2610f5bf7808/src/unwrap_err.rs",
+      "status": 200,
+      "bytes": 2078,
+      "sha256": "a47826be69411fdc6950a00230e9403a68ca223d8a779a660bff7f1a9b1531d5",
+      "byte_exact": true
+    },
+    {
+      "kind": "upstream_source",
+      "url": "https://raw.githubusercontent.com/embedded-graphics/embedded-graphics/0873f47c99f1303dba6d916e06da52b4fa971a05/core/src/draw_target/mod.rs",
+      "status": 200,
+      "bytes": 16938,
+      "sha256": "959dccc2a1b33a73f9da622ee1c20931d630e1773dfa6b93ac30aecb400d3b7e",
+      "byte_exact": true
+    }
+  ],
+  "not_performed": [
+    "No dependency installation/compile/execution or SDK test suite",
+    "No hardware, cryptographic protocol certification or physical erasure proof"
+  ],
+  "result": "PASS_identity_source_correspondence_only"
+}
