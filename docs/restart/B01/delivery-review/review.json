@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "task": "B01",
+  "phase": "Distinct exact README/documentary delivery review",
+  "candidate": "23ededa56620c35773247311f7ea810be643a17e",
+  "candidate_tree": "982a2bda037f30707f2d41ca6e3746fa273f9128",
+  "compared_with_partial_acceptance": "5bcfad5d6127cb53a4ca16a1e74de31c2a14f54d",
+  "original_documentary_candidate": "27308eb7eb80bce22f411f9d40da159d901b7087",
+  "original_distinct_review": "123de2ae71363b0d62d7e2240c0201539aa76075",
+  "original_review_copy_commit": "ee9b514061b88e3da7ba16ff13dca75a9a84e90d",
+  "reviewer": "/root/b01_final_review",
+  "candidate_author": "/root",
+  "verdict": "PASS_documentary_delivery_only",
+  "recorded_utc": "2026-10-20T11:32:56.452146+00:00",
+  "assignment_model_policy": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "xhigh",
+    "Astra_escalation": false
+  },
+  "findings": [],
+  "checks": {
+    "exact_changed_paths": [
+      "README.md"
+    ],
+    "all17_original_B01_documents_unchanged": true,
+    "all4_authored_output_hashes_and3_review_manifest_dependencies_verified": true,
+    "all4_original_review_copies_byte_exact": true,
+    "all_README_local_links_resolve_to_reviewed_bytes": true,
+    "actual_current_graph_link_and_unchanged4_criteria_verified": true,
+    "base_to_candidate_whitespace_exit": 0,
+    "no_added_files_archive_bodies_private_sources_or_executable_SDK": true
+  },
+  "parent_criteria": [
+    {
+      "index": 0,
+      "parent_criterion": "Board SDK exposes buses/power/entropy/key handles/algorithms/storage/display/input/lifecycle without Nostr schemas or policy.",
+      "parent_status": "pending_actual_generic_service_implementation",
+      "closed": false
+    },
+    {
+      "index": 1,
+      "parent_criterion": "Start with libraries in one trusted firmware image; document absence of inter-application security isolation.",
+      "parent_status": "pending_actual_one_image_independent_consumer",
+      "closed": false
+    },
+    {
+      "index": 2,
+      "parent_criterion": "Pin electrical contracts from hardware and design version compatibility without circular or sibling-path dependencies.",
+      "parent_status": "pending_H04_actual_electrical_pinning",
+      "closed": false
+    },
+    {
+      "index": 3,
+      "parent_criterion": "Development, owner-secured and product-qualified states have explicit transition limits and secret-reset requirements.",
+      "parent_status": "pending_concrete_lifecycle_protocol_and_implementation_proof",
+      "closed": false
+    }
+  ],
+  "parent_criteria_closed": 0,
+  "parent_task_complete": false,
+  "implementation_admitted": false,
+  "electrical_or_physical_qualification": false,
+  "actual_CI_observation": {
+    "PR": 1,
+    "head": "23ededa56620c35773247311f7ea810be643a17e",
+    "draft": true,
+    "workflows": {
+      "total_count": 0,
+      "workflows": []
+    },
+    "check_runs": {
+      "total_count": 0,
+      "check_runs": []
+    },
+    "combined_status": {
+      "state": "pending",
+      "statuses": []
+    },
+    "interpretation": "No CI workflow/check/status result observed; pending aggregate with zero statuses is not a CI PASS or an executing workflow."
+  },
+  "CI_result": "ABSENT_not_PASS",
+  "meaningful_verification": "Read-only actual Git diff,modes,blobs,manifest hashes,unchanged review dependencies,README targets,current graph,public PR head and actual workflow/check/status API observations; no prose-presence test or product suite.",
+  "limits": [
+    "Bounded documentary delivery only; no repeated source/manual/API research or new implementation/security review",
+    "Historical partial/source records retain dated limits; no old review is rebound to new executable bytes",
+    "No code/SDK crate/driver/provider/hardware choice or qualified lifecycle introduced",
+    "No CI framework,suite,merge,main change,PR mutation,task closure,source-notice/registry action or hardware operation by reviewer"
+  ],
+  "artifacts": [
+    {
+      "path": "commands.json",
+      "bytes": 8620,
+      "sha256": "a189b4232df5b1092e2890853ff33b2761e4d08793b1e8cb40078df97d9cbb5c"
+    },
+    {
+      "path": "probe.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "probe.py",
+      "bytes": 6514,
+      "sha256": "dd0970afcab65cdfa532c26bf0ca92de6c9a0fdbca31d56edb6d612cfee26a13"
+    },
+    {
+      "path": "report.md",
+      "bytes": 3534,
+      "sha256": "c8cc845dc950325724ea27714892c7237b81b367f2786a43e19079311da98827"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 3899,
+      "sha256": "b73c1f34a01778fbc865110143a68c8a3c0cf539586843a7796f3563fc52bf01"
+    }
+  ],
+  "review_commit_binding": "Actual reviewer commit reported externally after commit; no self-hash."
+}

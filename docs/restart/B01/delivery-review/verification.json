@@ -1,0 +1,96 @@
+{
+  "candidate": "23ededa56620c35773247311f7ea810be643a17e",
+  "partial_acceptance": "5bcfad5d6127cb53a4ca16a1e74de31c2a14f54d",
+  "original_documentary_candidate": "27308eb7eb80bce22f411f9d40da159d901b7087",
+  "original_review": "123de2ae71363b0d62d7e2240c0201539aa76075",
+  "observed_utc": "2026-10-20T11:31:47.351840+00:00",
+  "checks": {
+    "exact_delta": [
+      "README.md"
+    ],
+    "added_or_deleted_paths": 0,
+    "changed_docs_whitespace_exit": 0,
+    "all17_original_B01_documents_modes_blobs_unchanged": true,
+    "all4_authored_outputs_and3_review_manifest_dependencies_hash_verified": true,
+    "all4_copied_original_review_files_byte_exact": true,
+    "original_documentary_acceptance_receipt_unchanged_and_valid": true,
+    "all4_parent_criteria_open": [
+      {
+        "index": 0,
+        "parent_criterion": "Board SDK exposes buses/power/entropy/key handles/algorithms/storage/display/input/lifecycle without Nostr schemas or policy.",
+        "parent_status": "pending_actual_generic_service_implementation",
+        "closed": false
+      },
+      {
+        "index": 1,
+        "parent_criterion": "Start with libraries in one trusted firmware image; document absence of inter-application security isolation.",
+        "parent_status": "pending_actual_one_image_independent_consumer",
+        "closed": false
+      },
+      {
+        "index": 2,
+        "parent_criterion": "Pin electrical contracts from hardware and design version compatibility without circular or sibling-path dependencies.",
+        "parent_status": "pending_H04_actual_electrical_pinning",
+        "closed": false
+      },
+      {
+        "index": 3,
+        "parent_criterion": "Development, owner-secured and product-qualified states have explicit transition limits and secret-reset requirements.",
+        "parent_status": "pending_concrete_lifecycle_protocol_and_implementation_proof",
+        "closed": false
+      }
+    ],
+    "current_authoritative_graph": {
+      "url": "https://github.com/nSealr/nsealr/blob/main/plan/work-items.json",
+      "blob": "c13e58966b25f182d39cba36e89aff1fa8e07175",
+      "bytes": 438045,
+      "sha256": "e6ca36b38c09ce44e48567cd58383616a5dc0f8ce5e03175c0a7047e01f1d4c2",
+      "B01_status": "running",
+      "B01_criteria_unchanged": true
+    },
+    "README_local_links": [
+      {
+        "path": "docs/restart/B01/api-and-dependencies.md",
+        "blob": "15b072aee3b9ed13f809a0d1d90ae994eed873e1",
+        "sha256": "e73e689827570293d28a4f231e186ae1fc58110c244d1479e5f7a18dc575fc96"
+      },
+      {
+        "path": "docs/restart/B01/lifecycle.md",
+        "blob": "4b5d6c1eb0d8dacd2abb3d1f413ceab73fb076bc",
+        "sha256": "cf8183c11031149596905f90ecc13d53d4b3acdaa8a04af0845fa57dd76edc2f"
+      },
+      {
+        "path": "LICENSE",
+        "blob": "29630bf8d9961a31609cd6ed9c256dfbddfca86f",
+        "sha256": "25568053e878aa2d966a2c7f48d312fc12f9e7d115fed66728a8b1075d866b45"
+      }
+    ],
+    "README_external_links": [
+      "https://github.com/nSealr/nsealr",
+      "https://github.com/nSealr/hardware",
+      "https://github.com/nSealr/nsealr/blob/main/plan/work-items.json"
+    ],
+    "no_executable_SDK_or_workflow_paths": true,
+    "no_new_archive_bodies_or_private_sources": true,
+    "actual_GitHub_observation": {
+      "PR": 1,
+      "head": "23ededa56620c35773247311f7ea810be643a17e",
+      "draft": true,
+      "workflows": {
+        "total_count": 0,
+        "workflows": []
+      },
+      "check_runs": {
+        "total_count": 0,
+        "check_runs": []
+      },
+      "combined_status": {
+        "state": "pending",
+        "statuses": []
+      },
+      "interpretation": "No CI workflow/check/status result observed; pending aggregate with zero statuses is not a CI PASS or an executing workflow."
+    }
+  },
+  "candidate_tree": "982a2bda037f30707f2d41ca6e3746fa273f9128",
+  "outcome": "BOUNDED_README_DELIVERY_BINDINGS_VERIFIED"
+}
