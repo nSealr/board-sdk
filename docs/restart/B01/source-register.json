@@ -1,0 +1,1083 @@
+{
+  "schema_version": 1,
+  "task": "B01",
+  "phase": "Documentary service/lifecycle candidate; no selected dependency, implementation or task closure",
+  "recorded_utc": "2026-10-20T09:35:34.265698+00:00",
+  "preparation_commit": "c82b065f30309c5a8f3db3e81f8addfce7b8ad30",
+  "source_bindings": [
+    {
+      "repository": "nSealr/board-sdk",
+      "commit": "043e64ceb745a323f9a332cc02fae2993388fabe",
+      "path": "AGENTS.md",
+      "mode": "100644",
+      "blob": "fefca847191bdbbd92cc2cca1edf1f72e37a46cb",
+      "bytes": 485,
+      "sha256": "08dba923fd00648b93caa970f5f793af0533bd356ab99aaec3b26227f6a752a5"
+    },
+    {
+      "repository": "nSealr/board-sdk",
+      "commit": "043e64ceb745a323f9a332cc02fae2993388fabe",
+      "path": "README.md",
+      "mode": "100644",
+      "blob": "f11f996ca41a395456517d7743a8bf37e499e7ac",
+      "bytes": 2397,
+      "sha256": "9febbb251ca26b32eaf49e263108341aa0a0533b565689a005af1b1cba58988c"
+    },
+    {
+      "repository": "nSealr/board-sdk",
+      "commit": "043e64ceb745a323f9a332cc02fae2993388fabe",
+      "path": "LICENSE",
+      "mode": "100644",
+      "blob": "29630bf8d9961a31609cd6ed9c256dfbddfca86f",
+      "bytes": 1076,
+      "sha256": "25568053e878aa2d966a2c7f48d312fc12f9e7d115fed66728a8b1075d866b45"
+    },
+    {
+      "repository": "nSealr/board-sdk",
+      "commit": "043e64ceb745a323f9a332cc02fae2993388fabe",
+      "path": ".gitignore",
+      "mode": "100644",
+      "blob": "6822b73123ddd074c7c6e0558a06b79221f2d0ae",
+      "bytes": 37,
+      "sha256": "36548cf34306cbd1cfe3e5d7767bd742f2bb38cbe9fac9c8ad09ac69d74e1fd2"
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "AGENTS.md",
+      "mode": "100644",
+      "blob": "69f95f67ad5d837caaae2d88ebe822ad8e5f1cda",
+      "bytes": 2703,
+      "sha256": "bb2487e1ddf719f2c49621bc6018b6505beb1d9145805e3a157d9bab37c45020"
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "docs/restart/work-items.json",
+      "mode": "100644",
+      "blob": "d7abbae2dd7d779bd58d553097a5d0c75d4e3279",
+      "bytes": 417186,
+      "sha256": "c2e9520d16731f3769c7ff3ccbdb2df0ef1c053eae3c40d8afb7baae47cf3428"
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "docs/restart/development.md",
+      "mode": "100644",
+      "blob": "d5d44a79d2a499c571458763288b2b689e4a3566",
+      "bytes": 14256,
+      "sha256": "e47d96d5350ff9a60c7b53efb5005e09e9e4e99dddb81f20371bbfd8fe88dee9"
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "docs/restart/architecture.md",
+      "mode": "100644",
+      "blob": "b0eaee08365a39f1c0731cda6e2d3282b4a23607",
+      "bytes": 4852,
+      "sha256": "855730fb0a801f411616869ffc01640eb46522d7bb27bf63747fa2fa7f290b2e"
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "docs/restart/repositories.md",
+      "mode": "100644",
+      "blob": "8f4866cadbc353004988aaed9c8b53cd2f859499",
+      "bytes": 5146,
+      "sha256": "37d7efc19f65170119ecb4743f9f041c7df008c4204879004ab5aec2e5e3bb48"
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "docs/restart/implementation/P01/requirements.md",
+      "mode": "100644",
+      "blob": "e35aa354a546f38422c1f17f1a32e4fc0c2b7fec",
+      "bytes": 17199,
+      "sha256": "f8635e2941895b7d4043e769c9b73e2064036b1358e5f4266854b074a9b81326"
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "docs/restart/implementation/P01/threat-models.md",
+      "mode": "100644",
+      "blob": "3c8f03982ca59fd43eec83bc4cd347e0b6f243b7",
+      "bytes": 8532,
+      "sha256": "ebf8d5a821eb4843d7b961840a4b21cc74a2997dfa5b9e15f0cc6907586ffee0"
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "docs/restart/implementation/A01/disposition.md",
+      "mode": "100644",
+      "blob": "254f5b10bc05aa55efb44032d2ae7dde999942ce",
+      "bytes": 10522,
+      "sha256": "a7a28a5ffe953c30d625b893b13e1561da1448909b0fa174c9c055ab27fab7b5"
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "docs/restart/implementation/A01/result.json",
+      "mode": "100644",
+      "blob": "7497ccfdaf187dd023a7c68a1a250f15a9a5bb09",
+      "bytes": 3104,
+      "sha256": "e26ec4fd7d3a34c09039af4b9e0ebfe68eb1b6f9ec8036b275b77ac1d463ba7f"
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "docs/restart/implementation/S02/entropy-contract.md",
+      "mode": "100644",
+      "blob": "8e4383bb3c9dff8f9d81776e7b761260fe6dd3c4",
+      "bytes": 4710,
+      "sha256": "a0883cbd920b85ab1db71e619b2c503d7a84137761ab60d8913e5353c9ce0916"
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "crates/nsealr-core/Cargo.toml",
+      "mode": "100644",
+      "blob": "d1e390044d1ee304b7772fad3589a728bc697adb",
+      "bytes": 652,
+      "sha256": "628a4f6591a0b6b5d8406bad3dc849e304f01d4a54394c530809967ebe0728e4"
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "crates/nsealr-core/src/lib.rs",
+      "mode": "100644",
+      "blob": "b191031aff918e64dfbc5bf0a6fa443f65108f48",
+      "bytes": 3870,
+      "sha256": "6da880388eb54a911589d795abbb86dbd4b30f038413583901bb541e81d95e18"
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "crates/nsealr-core/src/nip19.rs",
+      "mode": "100644",
+      "blob": "862ec3e4f50d2be17c10a713da16f4cc9f64aa68",
+      "bytes": 18769,
+      "sha256": "738499a70213b0c8aeb2299b47ac7c8a7839cd7f6b5f4316a37448c9878484f0"
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "crates/nsealr-core/src/session/keyring.rs",
+      "mode": "100644",
+      "blob": "57a148a360e3e9b024256d8ab3817da0ed340dd8",
+      "bytes": 23857,
+      "sha256": "8cb2541f8092a102c81eb3c5dcf971a527fcf8d2247b911c33843bdfa8430003"
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "crates/nsealr-core/src/review/buttons.rs",
+      "mode": "100644",
+      "blob": "bbe4681a7b996a4ee198d5d9ae98918d28970bea",
+      "bytes": 5575,
+      "sha256": "6cfae0d225fedb6327ed68f2ef48a30e7a24b56a83d06f5be6ab28c0fb298895"
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+      "path": "crates/nsealr-core/src/review/display.rs",
+      "mode": "100644",
+      "blob": "f97ea1f590271e9abd592793939c53fff85d2284",
+      "bytes": 27649,
+      "sha256": "55c160f6e17cd672cb93a5d407656d879061564c8201e9065cfee93db24ee74d"
+    },
+    {
+      "repository": "nSealr/hardware",
+      "commit": "340697d6713a671e9e01b0dc874ec999ab071601",
+      "path": "README.md",
+      "mode": "100644",
+      "blob": "a50128147f8fb78e4940998f3542efb825e6e7fa",
+      "bytes": 2025,
+      "sha256": "aee6ee7bead9617902361bf6c9cbf8065cd5010fe0259d6c2698d03bfa1490ce"
+    },
+    {
+      "repository": "nSealr/hardware",
+      "commit": "e39015ae20efd37d509054f4b98ddd68ee7e98c9",
+      "path": "docs/restart/H01/brief.md",
+      "mode": "100644",
+      "blob": "d98caf57ccba01250ba129923be96a5674210414",
+      "bytes": 18448,
+      "sha256": "89f5e3487d669e1555bf07f8207ddc8cf783f554b72a7f02785fffd5deccf5e8"
+    },
+    {
+      "repository": "nSealr/hardware",
+      "commit": "e39015ae20efd37d509054f4b98ddd68ee7e98c9",
+      "path": "docs/restart/H01/result.json",
+      "mode": "100644",
+      "blob": "e5ca40ec0d628568616e680c2b716cba790d988b",
+      "bytes": 13218,
+      "sha256": "5c10be2874d6eb6eb194f1c71259a95f3197fb7aef79b085064ee8a601b7836e"
+    },
+    {
+      "repository": "nSealr/hardware",
+      "commit": "e39015ae20efd37d509054f4b98ddd68ee7e98c9",
+      "path": "docs/restart/H01/option-comparison.md",
+      "mode": "100644",
+      "blob": "c24764a703e10e4d3f1812d1df0d91daa70ea43a",
+      "bytes": 16352,
+      "sha256": "e674810963b4fafa080c78ca950d5ae68e5bc61d701ddbe9208e897907f6572d"
+    },
+    {
+      "repository": "nSealr/hardware",
+      "commit": "9d5ed3baf936157a26b55bf42e51da4ce6d240c2",
+      "path": "docs/restart/H01/independent-review-current-manual/report.md",
+      "mode": "100644",
+      "blob": "4917191a755e899e1c987f6255786aed9eefd933",
+      "bytes": 24416,
+      "sha256": "24fa08a104dc9f705026b387d131a16423c14eb2088697ac17aa33a22adf2275"
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "e823fecfd4bdc5d2eb0e4b31aedc3ac66cfabe36",
+      "path": "docs/restart/implementation/S04/PAUSE-HANDOFF.md",
+      "mode": "100644",
+      "blob": "7476d048867fac70fdf5406f86bf4233c39bcf48",
+      "bytes": 8060,
+      "sha256": "2514d5211d969183f7fbce50621f00223510026eb552269073ed1a7bd33dea69"
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "e823fecfd4bdc5d2eb0e4b31aedc3ac66cfabe36",
+      "path": "docs/restart/implementation/S04/custody-protocol.md",
+      "mode": "100644",
+      "blob": "b09cd256beddba9924b294e718391f5c06f3a6a0",
+      "bytes": 32560,
+      "sha256": "4430084c4dfe84fb972adf8700268c3f086bb8752e3759c8d69d7ff2712d7847"
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "e823fecfd4bdc5d2eb0e4b31aedc3ac66cfabe36",
+      "path": "docs/restart/implementation/S04/se-decision.md",
+      "mode": "100644",
+      "blob": "4a33a06def56d87379d3593828b56e20ebdaadfe",
+      "bytes": 21526,
+      "sha256": "1ccdb1162e975c8ec479bfc790d1b4de76e74644efd5359736e7de143d0b4e82"
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "e823fecfd4bdc5d2eb0e4b31aedc3ac66cfabe36",
+      "path": "docs/restart/implementation/S04/reset-followup.md",
+      "mode": "100644",
+      "blob": "d280f5f20b9ff09110141b3113aecf7091566f1e",
+      "bytes": 4612,
+      "sha256": "d44f45707dcbd33d302fae028770a448733b1266f88b3036c88c03f970a9f541"
+    },
+    {
+      "repository": "nSealr/hardware",
+      "commit": "40cdb6c519285ab81922b382440ef6c02a6fc89a",
+      "path": "docs/restart/H01/PAUSE-HANDOFF.md",
+      "mode": "100644",
+      "blob": "2033e35ffde4eaa1a6884b3e289869c721e3d750",
+      "bytes": 8299,
+      "sha256": "a2b2a99f96ce9b8ac3dcc53f89344d293130d5e623a9f51a15ec97e51e935d07"
+    },
+    {
+      "repository": "nSealr/hardware",
+      "commit": "40cdb6c519285ab81922b382440ef6c02a6fc89a",
+      "path": "docs/restart/H01/pause-state.json",
+      "mode": "100644",
+      "blob": "ccf2da0f63459d12944c7b53f2a1d35dd4f13739",
+      "bytes": 6496,
+      "sha256": "cf08353d75ceec5b1245b2d1ecf9a63730a4588783ae1938f28c0c37d9bbc29c"
+    },
+    {
+      "repository": "nSealr/hardware",
+      "commit": "e35ee73b53813b2892267edf9a07088b4a7c0036",
+      "path": "docs/restart/H01/resume-source-notes.md",
+      "mode": "100644",
+      "blob": "cb2d051ef4f6ad2735b914077a263c960d5ce6e5",
+      "bytes": 9623,
+      "sha256": "e798344531add40ba750d707ef2364d21e4fbe08c96853ad0ef36b82041aa88a"
+    },
+    {
+      "repository": "nSealr/hardware",
+      "commit": "e35ee73b53813b2892267edf9a07088b4a7c0036",
+      "path": "docs/restart/H01/MODEL-TRANSITION-2026-10-20.md",
+      "mode": "100644",
+      "blob": "9c1f6dfe0a68969fd03662e142e6893fcb469a6e",
+      "bytes": 5836,
+      "sha256": "dd0ce8d00a8832610fe434834809562700ef706b09d43dc81f3f3c97732d5592"
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f7af3616c5310686f2cbbc37dbfdf247b0d10cc0",
+      "path": "docs/restart/implementation/S04/resume-findings-2026-10-20.md",
+      "mode": "100644",
+      "blob": "b28e55991cdc5f3a00a680c1d054729eaaaf669d",
+      "bytes": 5635,
+      "sha256": "bd6669955dbacea08b612da04e912fe07d5cbaa3b70c06863a4dd89a5df65e0e"
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f7af3616c5310686f2cbbc37dbfdf247b0d10cc0",
+      "path": "docs/restart/implementation/S04/resume-source-addendum-2026-10-20.json",
+      "mode": "100644",
+      "blob": "70dd515a93f624bef8caf4eae7e72eebd8ed8f5b",
+      "bytes": 13997,
+      "sha256": "6235418180415df3af742c747d21e43ee5743cb435f2ad047ce2c6a4a16903fe"
+    },
+    {
+      "repository": "nSealr/nsealr",
+      "commit": "f7af3616c5310686f2cbbc37dbfdf247b0d10cc0",
+      "path": "docs/restart/implementation/S04/RESUME-HANDOFF-2026-10-20.md",
+      "mode": "100644",
+      "blob": "42e809ccce26e1393d08f5c7feff1cee5b1ba037",
+      "bytes": 4095,
+      "sha256": "a1a049e149886815834c99e88a83400b9eadb1b9a5831e62222a4ab8305d5bfd"
+    }
+  ],
+  "packages": [
+    {
+      "crate": "embedded-hal",
+      "version": "1.0.0",
+      "archive_url": "https://static.crates.io/crates/embedded-hal/embedded-hal-1.0.0.crate",
+      "archive_sha256": "361a90feb7004eca4019fb28352a9465666b24f840f5c3cddf0ff13920590b89",
+      "archive_bytes": 29801,
+      "license": "MIT OR Apache-2.0",
+      "rust_version": "1.60",
+      "vcs": {
+        "git": {
+          "sha1": "f8c79fee1df1900ee59e90160729edfa16a99b63"
+        },
+        "path_in_vcs": "embedded-hal"
+      },
+      "registry_metadata": {
+        "metadata_url": "https://crates.io/api/v1/crates/embedded-hal",
+        "metadata_sha256": "e206cd30591fbc282689fa9e0ed67780b2ec2d39932b02e25b30e70a33c8a9dd"
+      },
+      "repository": "https://github.com/rust-embedded/embedded-hal",
+      "source_files": [
+        {
+          "path": ".cargo_vcs_info.json",
+          "bytes": 106,
+          "sha256": "143877c27bdb63f6aaf284554b4b165aca28fae6ab3d4a02403afa26915789d6"
+        },
+        {
+          "path": "Cargo.toml",
+          "bytes": 1216,
+          "sha256": "2e98e7e78b70c2986e1a2ef2593b7d85cf4cdd198c8d8e872a5b2159f5b1cf16"
+        },
+        {
+          "path": "LICENSE-APACHE",
+          "bytes": 10847,
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "path": "LICENSE-MIT",
+          "bytes": 1063,
+          "sha256": "520bc4942f199aad3dfe939c475d67ffbddfea482e41fc4fcad8829b71affc99"
+        },
+        {
+          "path": "src/delay.rs",
+          "bytes": 1784,
+          "sha256": "05960325c846fa20f0fe07a2bba686039ceb05aed6e35e2f7f23c1915b724012"
+        },
+        {
+          "path": "src/digital.rs",
+          "bytes": 5753,
+          "sha256": "1185f7222cd9a2aec9003c510e2cd810719b6c930d1867c2e4161e747be3c812"
+        },
+        {
+          "path": "src/i2c-shared-bus.svg",
+          "bytes": 12439,
+          "sha256": "a5fa34e610f9962479f077d57a6117d6a2ae3524012ec5c6275ca81308989c6e"
+        },
+        {
+          "path": "src/i2c.rs",
+          "bytes": 15606,
+          "sha256": "28d44375daa30acf5488642948bda24a7030738a65f91727b9908cf7dfc3aad0"
+        },
+        {
+          "path": "src/lib.rs",
+          "bytes": 469,
+          "sha256": "43ad35769daa4e063d818bc7fb9bee9651548e7583b2fde5e4a104fcef0bfaf9"
+        },
+        {
+          "path": "src/pwm.rs",
+          "bytes": 4519,
+          "sha256": "8c80846f9afc0b1b162156e4f948124c508dca636212d2db3d2a8fc5a4a66973"
+        },
+        {
+          "path": "src/spi-shared-bus.svg",
+          "bytes": 21611,
+          "sha256": "8f789f2e90e7800c28e69a9726af0f0f86f11246759f09eb5a1f83321880421b"
+        },
+        {
+          "path": "src/spi.rs",
+          "bytes": 20484,
+          "sha256": "c04a3f22c679f0f98f6f49e00bbc44dc72d1beba27aa4cc57afd17b2b872a828"
+        }
+      ],
+      "manifest_features": {
+        "defmt-03": [
+          "dep:defmt-03"
+        ]
+      },
+      "manifest_dependencies": {
+        "defmt-03": {
+          "version": "0.3",
+          "optional": true,
+          "package": "defmt"
+        }
+      },
+      "adoption": "surveyed_only_not_selected"
+    },
+    {
+      "crate": "embedded-hal-async",
+      "version": "1.0.0",
+      "archive_url": "https://static.crates.io/crates/embedded-hal-async/embedded-hal-async-1.0.0.crate",
+      "archive_sha256": "0c4c685bbef7fe13c3c6dd4da26841ed3980ef33e841cddfa15ce8a8fb3f1884",
+      "archive_bytes": 11605,
+      "license": "MIT OR Apache-2.0",
+      "rust_version": "1.75",
+      "vcs": {
+        "git": {
+          "sha1": "f8c79fee1df1900ee59e90160729edfa16a99b63"
+        },
+        "path_in_vcs": "embedded-hal-async"
+      },
+      "registry_metadata": {
+        "metadata_url": "https://crates.io/api/v1/crates/embedded-hal-async",
+        "metadata_sha256": "1f2ab85ab9ea1a5f762f7ddc62c62cde7b07283ee157b672b1843f7182e49c17"
+      },
+      "repository": "https://github.com/rust-embedded/embedded-hal",
+      "source_files": [
+        {
+          "path": ".cargo_vcs_info.json",
+          "bytes": 112,
+          "sha256": "0f0a7a97a38c96c2dc518d8b119024163e9e44632c5e5fbd583e47ad0924b135"
+        },
+        {
+          "path": "Cargo.toml",
+          "bytes": 1230,
+          "sha256": "c6f69c49e82d20b35408239bce633c42d638afb7d9f60a8b21ed3926c0189bd4"
+        },
+        {
+          "path": "LICENSE-APACHE",
+          "bytes": 10847,
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "path": "LICENSE-MIT",
+          "bytes": 1093,
+          "sha256": "b32b47118594bca5e21a37d64d9924bff856bf4f688c482b417cc5e885d6e7bf"
+        },
+        {
+          "path": "src/delay.rs",
+          "bytes": 1383,
+          "sha256": "0b1d2dec5ac83270d796d320311b56a0cb6b9b2070d56a99c6d0599d91727609"
+        },
+        {
+          "path": "src/digital.rs",
+          "bytes": 2565,
+          "sha256": "c41e57013db6eadbd4741f8b24cd270fb8df8f4f1bb9ebff03eb1707416e7343"
+        },
+        {
+          "path": "src/i2c.rs",
+          "bytes": 5493,
+          "sha256": "c0b9163d90d7f0b0d25a70ae03792c07fce1f20cf005e206ea82947854a7134f"
+        },
+        {
+          "path": "src/lib.rs",
+          "bytes": 526,
+          "sha256": "1611d308f5d435c28bfb5eb4ab57d52a180d478739feebd5a6a858a17a8b86a5"
+        },
+        {
+          "path": "src/spi.rs",
+          "bytes": 7198,
+          "sha256": "983ac9da3a493452009e4c16bfb4774580d8253fbacc9611c03f398982e1d173"
+        }
+      ],
+      "manifest_features": {
+        "defmt-03": [
+          "dep:defmt-03",
+          "embedded-hal/defmt-03"
+        ]
+      },
+      "manifest_dependencies": {
+        "defmt-03": {
+          "version": "0.3",
+          "optional": true,
+          "package": "defmt"
+        },
+        "embedded-hal": {
+          "version": "1.0.0"
+        }
+      },
+      "adoption": "surveyed_only_not_selected"
+    },
+    {
+      "crate": "embedded-io",
+      "version": "0.7.1",
+      "archive_url": "https://static.crates.io/crates/embedded-io/embedded-io-0.7.1.crate",
+      "archive_sha256": "9eb1aa714776b75c7e67e1da744b81a129b3ff919c8712b5e1b32252c1f07cc7",
+      "archive_bytes": 16035,
+      "license": "MIT OR Apache-2.0",
+      "rust_version": "1.81",
+      "vcs": {
+        "git": {
+          "sha1": "21e547acd5c8fc7b26d9794f88c291dde912a788"
+        },
+        "path_in_vcs": "embedded-io"
+      },
+      "registry_metadata": {
+        "metadata_url": "https://crates.io/api/v1/crates/embedded-io",
+        "metadata_sha256": "4b012ebe0d77caede153c7cabea876380bc18a30deaa143635a3fc3e8397eef7"
+      },
+      "repository": "https://github.com/rust-embedded/embedded-hal",
+      "source_files": [
+        {
+          "path": ".cargo_vcs_info.json",
+          "bytes": 105,
+          "sha256": "4d8f9da27801741096b798c10b6180f96c2f1446d7ac2960774105333c15a5ab"
+        },
+        {
+          "path": "Cargo.toml",
+          "bytes": 1109,
+          "sha256": "6f021b6c3db0f1e47398e7ff99a9e1852ac96b9dcdd0fd9219095568e725d09a"
+        },
+        {
+          "path": "LICENSE-APACHE",
+          "bytes": 10847,
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "path": "LICENSE-MIT",
+          "bytes": 1067,
+          "sha256": "47674f8b7d98c232c6f81346c4cfe48933d913a9e257d7a522ad9f42e3dd61e1"
+        },
+        {
+          "path": "src/impls/boxx.rs",
+          "bytes": 2634,
+          "sha256": "4677941892735096e0137c16ed469ae5e369d89aa9c543a4da0f4f817dcc52c7"
+        },
+        {
+          "path": "src/impls/mod.rs",
+          "bytes": 143,
+          "sha256": "66efbe05385623028fcdf85067f2c492a2bdbd716d088d0b791c88b75e6faf5c"
+        },
+        {
+          "path": "src/impls/slice_mut.rs",
+          "bytes": 1790,
+          "sha256": "93a791fe2198644ce2394a13815750b9f0a23d5dc9a0227ae2897bc1d912bd9d"
+        },
+        {
+          "path": "src/impls/slice_ref.rs",
+          "bytes": 1500,
+          "sha256": "0f903a8564e2fba3e333986f8816caa009bbe27d3732604c1df3d69bf87714d5"
+        },
+        {
+          "path": "src/impls/vec.rs",
+          "bytes": 665,
+          "sha256": "d2cb68920767c9cb170a5bc6a2a5424a8b6bec3f4fd3e4715b3a7c6f6946b5bc"
+        },
+        {
+          "path": "src/impls/vec_deque.rs",
+          "bytes": 3515,
+          "sha256": "01d083aa93c43bfa1b8d4e0264ef448db66c1e70e4e3810abffb67e2206707eb"
+        },
+        {
+          "path": "src/lib.rs",
+          "bytes": 24045,
+          "sha256": "1077dd3ed8cc4c44d2da1ef5b1e6f4322191b3e25c12407ace75df55b9083963"
+        }
+      ],
+      "manifest_features": {
+        "alloc": [],
+        "defmt": [
+          "dep:defmt"
+        ],
+        "std": [
+          "alloc"
+        ]
+      },
+      "manifest_dependencies": {
+        "defmt": {
+          "version": "1",
+          "optional": true
+        }
+      },
+      "adoption": "surveyed_only_not_selected"
+    },
+    {
+      "crate": "embedded-io-async",
+      "version": "0.7.0",
+      "archive_url": "https://static.crates.io/crates/embedded-io-async/embedded-io-async-0.7.0.crate",
+      "archive_sha256": "2564b9f813c544241430e147d8bc454815ef9ac998878d30cc3055449f7fd4c0",
+      "archive_bytes": 11731,
+      "license": "MIT OR Apache-2.0",
+      "rust_version": "1.81",
+      "vcs": {
+        "git": {
+          "sha1": "a926c2a65948a4f6aeddcd5d7f8f1049c1c54c95"
+        },
+        "path_in_vcs": "embedded-io-async"
+      },
+      "registry_metadata": {
+        "metadata_url": "https://crates.io/api/v1/crates/embedded-io-async",
+        "metadata_sha256": "b8d5ce32a7d89defd3938c7d55ba0bd1d4cf575bb7a0183c700d8780b15f8c22"
+      },
+      "repository": "https://github.com/rust-embedded/embedded-hal",
+      "source_files": [
+        {
+          "path": ".cargo_vcs_info.json",
+          "bytes": 111,
+          "sha256": "464fa51b6626f11af211f992b9cc0b8254cf5b8fe4465b95c7b9c429a4bed42c"
+        },
+        {
+          "path": "Cargo.toml",
+          "bytes": 1272,
+          "sha256": "be1791d2d246b893f6d949f815e20c5955c84dc39c5df097d111b5bbc59acd61"
+        },
+        {
+          "path": "LICENSE-APACHE",
+          "bytes": 10847,
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "path": "LICENSE-MIT",
+          "bytes": 1073,
+          "sha256": "ad318924e0f9bbf92ffc2b911055adbfe081b345a694b14d90c06704561845e3"
+        },
+        {
+          "path": "src/impls/boxx.rs",
+          "bytes": 1806,
+          "sha256": "467a015f53f1f3f6173a9c115b5b199e64ca6cab037f5a0e55c90b33736e60b7"
+        },
+        {
+          "path": "src/impls/mod.rs",
+          "bytes": 143,
+          "sha256": "66efbe05385623028fcdf85067f2c492a2bdbd716d088d0b791c88b75e6faf5c"
+        },
+        {
+          "path": "src/impls/slice_mut.rs",
+          "bytes": 1280,
+          "sha256": "0cff2a9d5723f80acbf88c0d5638dbf2e14e9b6aab5181b3a3ecd46b5c075759"
+        },
+        {
+          "path": "src/impls/slice_ref.rs",
+          "bytes": 1316,
+          "sha256": "99f3354342a8c699f9ada3ea3465d3cd5e16e9a37c390d43fb3fe0c33a3392d3"
+        },
+        {
+          "path": "src/impls/vec.rs",
+          "bytes": 530,
+          "sha256": "68518e73e37192485d2b2dcafb95cd62e50b68fc3c02b1452e2e80d6b84a08b6"
+        },
+        {
+          "path": "src/impls/vec_deque.rs",
+          "bytes": 2942,
+          "sha256": "75a47ab4df2fbdc3d8ce87994cae2b0c577ff5a38d087df2894fa600e205a0e3"
+        },
+        {
+          "path": "src/lib.rs",
+          "bytes": 9595,
+          "sha256": "bd7582aa2605be3d790e3bdaf3981307ef4be43444c610aa57a29b4b3139c752"
+        }
+      ],
+      "manifest_features": {
+        "alloc": [
+          "embedded-io/alloc"
+        ],
+        "defmt": [
+          "dep:defmt",
+          "embedded-io/defmt"
+        ],
+        "std": [
+          "alloc",
+          "embedded-io/std"
+        ]
+      },
+      "manifest_dependencies": {
+        "defmt": {
+          "version": "1",
+          "optional": true,
+          "package": "defmt"
+        },
+        "embedded-io": {
+          "version": "0.7.0"
+        }
+      },
+      "adoption": "surveyed_only_not_selected"
+    },
+    {
+      "crate": "rand_core",
+      "version": "0.10.1",
+      "archive_url": "https://static.crates.io/crates/rand_core/rand_core-0.10.1.crate",
+      "archive_sha256": "63b8176103e19a2643978565ca18b50549f6101881c443590420e4dc998a3c69",
+      "archive_bytes": 22833,
+      "license": "MIT OR Apache-2.0",
+      "rust_version": "1.85",
+      "vcs": {
+        "git": {
+          "sha1": "5cd7df496d0bff1d95534ac8b66a2610f5bf7808"
+        },
+        "path_in_vcs": ""
+      },
+      "registry_metadata": {
+        "metadata_url": "https://crates.io/api/v1/crates/rand_core",
+        "metadata_sha256": "0ca5d6b3ce1bae218390e4883421e23ec424562965b793d7243b3cd42f506fe1"
+      },
+      "repository": "https://github.com/rust-random/rand_core",
+      "source_files": [
+        {
+          "path": ".cargo_vcs_info.json",
+          "bytes": 94,
+          "sha256": "dfb564e676e5d157f692ca8f656aaab4ae20a2ff7f632587dacfc4725d7d7645"
+        },
+        {
+          "path": "Cargo.toml",
+          "bytes": 1489,
+          "sha256": "4ff4becbb9ef65154f4840262f8d0cffa97d97a265b994b9d53f53925bdd3578"
+        },
+        {
+          "path": "LICENSE-APACHE",
+          "bytes": 10282,
+          "sha256": "6df43f6f4b5d4587f3d8d71e45532c688fd168afa5fe89d571cb32fa09c4ef51"
+        },
+        {
+          "path": "LICENSE-MIT",
+          "bytes": 1076,
+          "sha256": "8b6e9feec03e7c9a5facb26855cecd31662bf989b636bcfe79521bdf8ac863f0"
+        },
+        {
+          "path": "src/block.rs",
+          "bytes": 9678,
+          "sha256": "ec396874071b217e1e4636ab1f57f5b5167bcf89688bb64d67dda39230a6f927"
+        },
+        {
+          "path": "src/lib.rs",
+          "bytes": 10386,
+          "sha256": "b4df43985896bf2f38e595f7574c4d7e0df1c562e40c6a92133d9eef1cc01908"
+        },
+        {
+          "path": "src/seedable_rng.rs",
+          "bytes": 8347,
+          "sha256": "151b125f0e2e943bc2b44cf409e202642f43f78473b1a1657063f29a07560e57"
+        },
+        {
+          "path": "src/unwrap_err.rs",
+          "bytes": 2078,
+          "sha256": "a47826be69411fdc6950a00230e9403a68ca223d8a779a660bff7f1a9b1531d5"
+        },
+        {
+          "path": "src/utils.rs",
+          "bytes": 4989,
+          "sha256": "6a0c2d6f64ae8e27f3b71be1b1973353d3eccf24cd6e17bdde2b966282438d20"
+        },
+        {
+          "path": "src/word.rs",
+          "bytes": 1680,
+          "sha256": "6673e8e79bafe39ee5ec07317d166ce6824b32e0dfc71a1033afdc672bac5e2e"
+        }
+      ],
+      "manifest_features": {},
+      "manifest_dependencies": {},
+      "adoption": "surveyed_only_not_selected"
+    },
+    {
+      "crate": "embedded-graphics-core",
+      "version": "0.4.0",
+      "archive_url": "https://static.crates.io/crates/embedded-graphics-core/embedded-graphics-core-0.4.0.crate",
+      "archive_sha256": "ba9ecd261f991856250d2207f6d8376946cd9f412a2165d3b75bc87a0bc7a044",
+      "archive_bytes": 37658,
+      "license": "MIT OR Apache-2.0",
+      "rust_version": null,
+      "vcs": {
+        "git": {
+          "sha1": "0873f47c99f1303dba6d916e06da52b4fa971a05"
+        },
+        "path_in_vcs": "core"
+      },
+      "registry_metadata": {
+        "metadata_url": "https://crates.io/api/v1/crates/embedded-graphics-core/0.4.0",
+        "metadata_sha256": "acc29b09d5b4da3c5b2dd71ce1166a0442da1c5a556d455ad43405d4d20e81fa"
+      },
+      "repository": "https://github.com/embedded-graphics/embedded-graphics",
+      "source_files": [
+        {
+          "path": ".cargo_vcs_info.json",
+          "bytes": 98,
+          "sha256": "8513c08da08530af191d57e7b34acae5bf71f8bafb614e5e4772b6819178d071"
+        },
+        {
+          "path": "Cargo.toml",
+          "bytes": 1522,
+          "sha256": "707ff44aac6dcb4928502b52ba8f4e0615c93d94240471c634d952a181793899"
+        },
+        {
+          "path": "src/draw_target/mod.rs",
+          "bytes": 16938,
+          "sha256": "959dccc2a1b33a73f9da622ee1c20931d630e1773dfa6b93ac30aecb400d3b7e"
+        }
+      ],
+      "manifest_features": {
+        "default": [],
+        "nalgebra_support": [
+          "nalgebra"
+        ]
+      },
+      "manifest_dependencies": {
+        "az": {
+          "version": "1.1"
+        },
+        "byteorder": {
+          "version": "1.3.4",
+          "default-features": false
+        },
+        "defmt": {
+          "version": "0.3.2",
+          "optional": true
+        },
+        "nalgebra": {
+          "version": "0.30.1",
+          "optional": true,
+          "default-features": false
+        }
+      },
+      "adoption": "surveyed_only_not_selected",
+      "upstream_license_files": [
+        {
+          "path": "LICENSE-APACHE",
+          "url": "https://raw.githubusercontent.com/embedded-graphics/embedded-graphics/0873f47c99f1303dba6d916e06da52b4fa971a05/LICENSE-APACHE",
+          "bytes": 10847,
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+          "git_blob": "16fe87b06e802f094b3fbb0894b137bca2b16ef1",
+          "origin": "Exact upstream repository root; published core0.4.0 archive does not include license bodies."
+        },
+        {
+          "path": "LICENSE-MIT",
+          "url": "https://raw.githubusercontent.com/embedded-graphics/embedded-graphics/0873f47c99f1303dba6d916e06da52b4fa971a05/LICENSE-MIT",
+          "bytes": 1056,
+          "sha256": "4ed59ae6666cce57ee6865ed25e0acd4452bf95f5f4f081248b1a6e22eb609a4",
+          "git_blob": "87584ce8f5c7ad3174ed3df9e3cf6aabe80b3171",
+          "origin": "Exact upstream repository root; published core0.4.0 archive does not include license bodies."
+        }
+      ],
+      "archive_license_bodies": "Absent; exact upstream root license blobs separately fetched and verified, not claimed present in archive."
+    }
+  ],
+  "official_upstream_byte_correspondence": [
+    {
+      "crate": "embedded-hal",
+      "path": "src/spi.rs",
+      "url": "https://raw.githubusercontent.com/rust-embedded/embedded-hal/f8c79fee1df1900ee59e90160729edfa16a99b63/embedded-hal/src/spi.rs",
+      "status": 200,
+      "bytes": 20484,
+      "sha256": "c04a3f22c679f0f98f6f49e00bbc44dc72d1beba27aa4cc57afd17b2b872a828",
+      "matches_published_crate_bytes": true
+    },
+    {
+      "crate": "embedded-hal",
+      "path": "src/i2c.rs",
+      "url": "https://raw.githubusercontent.com/rust-embedded/embedded-hal/f8c79fee1df1900ee59e90160729edfa16a99b63/embedded-hal/src/i2c.rs",
+      "status": 200,
+      "bytes": 15606,
+      "sha256": "28d44375daa30acf5488642948bda24a7030738a65f91727b9908cf7dfc3aad0",
+      "matches_published_crate_bytes": true
+    },
+    {
+      "crate": "embedded-hal",
+      "path": "src/delay.rs",
+      "url": "https://raw.githubusercontent.com/rust-embedded/embedded-hal/f8c79fee1df1900ee59e90160729edfa16a99b63/embedded-hal/src/delay.rs",
+      "status": 200,
+      "bytes": 1784,
+      "sha256": "05960325c846fa20f0fe07a2bba686039ceb05aed6e35e2f7f23c1915b724012",
+      "matches_published_crate_bytes": true
+    },
+    {
+      "crate": "embedded-hal-async",
+      "path": "src/spi.rs",
+      "url": "https://raw.githubusercontent.com/rust-embedded/embedded-hal/f8c79fee1df1900ee59e90160729edfa16a99b63/embedded-hal-async/src/spi.rs",
+      "status": 200,
+      "bytes": 7198,
+      "sha256": "983ac9da3a493452009e4c16bfb4774580d8253fbacc9611c03f398982e1d173",
+      "matches_published_crate_bytes": true
+    },
+    {
+      "crate": "embedded-hal-async",
+      "path": "src/i2c.rs",
+      "url": "https://raw.githubusercontent.com/rust-embedded/embedded-hal/f8c79fee1df1900ee59e90160729edfa16a99b63/embedded-hal-async/src/i2c.rs",
+      "status": 200,
+      "bytes": 5493,
+      "sha256": "c0b9163d90d7f0b0d25a70ae03792c07fce1f20cf005e206ea82947854a7134f",
+      "matches_published_crate_bytes": true
+    },
+    {
+      "crate": "embedded-io",
+      "path": "src/lib.rs",
+      "url": "https://raw.githubusercontent.com/rust-embedded/embedded-hal/21e547acd5c8fc7b26d9794f88c291dde912a788/embedded-io/src/lib.rs",
+      "status": 200,
+      "bytes": 24045,
+      "sha256": "1077dd3ed8cc4c44d2da1ef5b1e6f4322191b3e25c12407ace75df55b9083963",
+      "matches_published_crate_bytes": true
+    },
+    {
+      "crate": "embedded-io-async",
+      "path": "src/lib.rs",
+      "url": "https://raw.githubusercontent.com/rust-embedded/embedded-hal/a926c2a65948a4f6aeddcd5d7f8f1049c1c54c95/embedded-io-async/src/lib.rs",
+      "status": 200,
+      "bytes": 9595,
+      "sha256": "bd7582aa2605be3d790e3bdaf3981307ef4be43444c610aa57a29b4b3139c752",
+      "matches_published_crate_bytes": true
+    },
+    {
+      "path": "src/lib.rs",
+      "url": "https://raw.githubusercontent.com/rust-random/rand_core/5cd7df496d0bff1d95534ac8b66a2610f5bf7808/src/lib.rs",
+      "status": 200,
+      "bytes": 10386,
+      "sha256": "b4df43985896bf2f38e595f7574c4d7e0df1c562e40c6a92133d9eef1cc01908",
+      "matches_published_crate_bytes": true,
+      "crate": "rand_core"
+    },
+    {
+      "path": "src/unwrap_err.rs",
+      "url": "https://raw.githubusercontent.com/rust-random/rand_core/5cd7df496d0bff1d95534ac8b66a2610f5bf7808/src/unwrap_err.rs",
+      "status": 200,
+      "bytes": 2078,
+      "sha256": "a47826be69411fdc6950a00230e9403a68ca223d8a779a660bff7f1a9b1531d5",
+      "matches_published_crate_bytes": true,
+      "crate": "rand_core"
+    },
+    {
+      "path": "src/draw_target/mod.rs",
+      "url": "https://raw.githubusercontent.com/embedded-graphics/embedded-graphics/0873f47c99f1303dba6d916e06da52b4fa971a05/core/src/draw_target/mod.rs",
+      "bytes": 16938,
+      "sha256": "959dccc2a1b33a73f9da622ee1c20931d630e1773dfa6b93ac30aecb400d3b7e",
+      "matches_published_crate_bytes": true,
+      "crate": "embedded-graphics-core",
+      "status": 200
+    }
+  ],
+  "claims": [
+    {
+      "id": "UP-SPI",
+      "source_locator": "embedded-hal1.0.0 src/spi.rs:128-154,347-365",
+      "source_fact": "SpiBus may return before idle; SpiDevice transaction flushes/manages CS with implementation-defined locking and attempted error deassertion.",
+      "decision_requirement": "Target bounds, failed cleanup and command-side-effect recovery are separate requirements."
+    },
+    {
+      "id": "UP-I2C-DELAY",
+      "source_locator": "embedded-hal1.0.0 src/i2c.rs:41-48;src/delay.rs:9-44",
+      "source_fact": "I2C completion includes bus idle; DelayNs specifies minimum wait, not maximum runtime.",
+      "decision_requirement": "No trait-level maximum deadline inferred."
+    },
+    {
+      "id": "UP-ASYNC-SPI",
+      "source_locator": "embedded-hal-async1.0.0 src/spi.rs:13-36",
+      "source_fact": "The inspected async SPI contract has no universal future-drop/cancellation guarantee.",
+      "decision_requirement": "Inspect exact selected future/Drop/DMA/interrupt ownership and recovery."
+    },
+    {
+      "id": "UP-IO",
+      "source_locator": "embedded-io0.7.1 src/lib.rs;embedded-io-async0.7.0 src/lib.rs:48-75,122-151",
+      "source_fact": "Streams are not atomic frames; async read/write cancellation safety is encouraged rather than required. Compound exact/all helpers can progress partially.",
+      "decision_requirement": "Frame rejection, correlated state and uncertain side-effect recovery belong above stream transport."
+    },
+    {
+      "id": "UP-RNG",
+      "source_locator": "rand_core0.10.1 src/lib.rs:175-200,225-249;src/unwrap_err.rs:35-67",
+      "source_fact": "TryRng carries errors; TryCryptoRng does not prove suitability; UnwrapErr panics. No whole-destination cleanup requirement follows from the trait.",
+      "decision_requirement": "Preserve S02 fallibility, clearing, provenance, bounded handling and no fallback."
+    },
+    {
+      "id": "UP-DISPLAY",
+      "source_locator": "embedded-graphics-core0.4.0 src/draw_target/mod.rs:281-304,388-424",
+      "source_fact": "DrawTarget has arbitrary iterator input and associated error; a RAM framebuffer can be Infallible. There is no panel flush/visible-refresh/maximum-work contract.",
+      "decision_requirement": "Use bounded inputs and separately prove target transfer/presentation semantics."
+    },
+    {
+      "id": "PROJECT-DISPOSITION",
+      "source_locator": "Exact f2ef70f nip19/session-keyring/review and accepted P01/S02 bindings below",
+      "source_fact": "Existing modules contain Nostr/application semantics and software-owned scalars; S02 has no production entropy provider.",
+      "decision_requirement": "Retain in engine; no generic implementation/consumer is selected for extraction."
+    },
+    {
+      "id": "LIFECYCLE-GAP",
+      "source_locator": "Exact S04e823fec and H0140cdb6c context bindings below",
+      "source_fact": "Pinned proposals are incomplete; no final reset/custody or actual hardware electrical contract is accepted.",
+      "decision_requirement": "Documented transitions are requirements. S04/H01/H04 concrete inputs and B02/B03 actual proof remain required."
+    }
+  ],
+  "retrieval_failures_preserved": [
+    {
+      "crate": "rand_core",
+      "path": "src/lib.rs",
+      "url": "https://raw.githubusercontent.com/rust-lang-nursery/rand/5cd7df496d0bff1d95534ac8b66a2610f5bf7808/src/lib.rs",
+      "status": 404,
+      "error": "HTTPError",
+      "error_body_sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+      "matches_published_crate_bytes": null
+    },
+    {
+      "crate": "rand_core",
+      "path": "src/unwrap_err.rs",
+      "url": "https://raw.githubusercontent.com/rust-lang-nursery/rand/5cd7df496d0bff1d95534ac8b66a2610f5bf7808/src/unwrap_err.rs",
+      "status": 404,
+      "error": "HTTPError",
+      "error_body_sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+      "matches_published_crate_bytes": null
+    }
+  ],
+  "rand_core_origin_correction": {
+    "schema_version": 1,
+    "observed_utc": "2026-10-18T20:01:03.931019+00:00",
+    "phase": "B01 preparation-source correction only",
+    "crate": "rand_core",
+    "version": "0.10.1",
+    "crate_level_repository_metadata": "https://github.com/rust-lang-nursery/rand",
+    "version_level_repository_metadata": "https://github.com/rust-random/rand_core",
+    "published_cargo_manifest_repository": "https://github.com/rust-random/rand_core",
+    "cargo_manifest_sha256": "4ff4becbb9ef65154f4840262f8d0cffa97d97a265b994b9d53f53925bdd3578",
+    "resolution": "Initial404 came from the crate-level stale repository field. Exact version metadata and published manifest agree on rust-random/rand_core; this source-origin correction, not a library code change, yields exact upstream byte correspondence. Earlier failed URL/outcome remains in preparation-observations.json.",
+    "upstream_correspondence": [
+      {
+        "path": "src/lib.rs",
+        "url": "https://raw.githubusercontent.com/rust-random/rand_core/5cd7df496d0bff1d95534ac8b66a2610f5bf7808/src/lib.rs",
+        "status": 200,
+        "bytes": 10386,
+        "sha256": "b4df43985896bf2f38e595f7574c4d7e0df1c562e40c6a92133d9eef1cc01908",
+        "matches_published_crate_bytes": true
+      },
+      {
+        "path": "src/unwrap_err.rs",
+        "url": "https://raw.githubusercontent.com/rust-random/rand_core/5cd7df496d0bff1d95534ac8b66a2610f5bf7808/src/unwrap_err.rs",
+        "status": 200,
+        "bytes": 2078,
+        "sha256": "a47826be69411fdc6950a00230e9403a68ca223d8a779a660bff7f1a9b1531d5",
+        "matches_published_crate_bytes": true
+      }
+    ],
+    "not_claimed": "No selected dependency, compile/runtime proof or B01 final implementation."
+  },
+  "display_license_inventory_correction": "Initial inventory assumed packaged LICENSE-MIT/APACHE and failed with KeyError; no incomplete public register emitted. Actual archive has no license-body member; exact upstream root license blobs separately fetched/verified.",
+  "web_documentation_attempt": {
+    "date": "2026-10-20",
+    "result": "Web tool returned inaccessible for versioned docs.rs DrawTarget/SpiDevice/Read/TryCryptoRng pages; exact official registry archives and upstream raw source used instead.",
+    "product_or_source_failure": false
+  },
+  "checks": {
+    "project_git_bindings_verified": 36,
+    "archive_checksums_verified": 6,
+    "upstream_source_bytes_equal": 10,
+    "method": "Exact Git mode/blob/bytes/SHA256 and archive members inspected; actual source semantic review, not prose-presence tests."
+  },
+  "rights": "No upstream code/manual body redistributed. Five archives contain license bodies; graphics0.4.0 does not, so exact upstream root licenses were separately bound. Original source/archives stay with original URLs and local research cache. Future dependency adoption must preserve applicable full licenses.",
+  "not_executed": [
+    "No dependency install/compile or library runtime fixture.",
+    "No target driver, physical hardware/entropy/display/reset measurement, release test or SDK executable scope."
+  ],
+  "new_context_reconciliation": {
+    "H01_e35ee73": "Unreviewed source-bound cache/GPIO/watchdog/kit findings motivate explicit buffer/master/attribution and progress-qualified recovery requirements. No concrete host/driver configuration is adopted.",
+    "S04_f7af361": "Unreviewed historical NXP session/reset/middleware notes motivate separating host epoch from backend session revocation. Historical SE050 is not SE051C2 admission. Exact applet remains pending."
+  },
+  "pending": [
+    "Distinct final substantive review of exact documentary candidate",
+    "Literal criterion2 actual H04 electrical pinning",
+    "Actual current H01/S04 and adopted A02 path/source reconciliation before integration"
+  ]
+}

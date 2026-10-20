@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "task": "B01",
+  "recorded_utc": "2026-10-20T09:33:49.177256+00:00",
+  "candidate_kind": "Bounded documentary decisions; unreviewed partial task result",
+  "author": "/root",
+  "input_preparation": "c82b065f30309c5a8f3db3e81f8addfce7b8ad30",
+  "preparation_acceptance": "8377f9264ca0c426dad0d79578c01be2e1d32509",
+  "exact_candidate": "Enclosing Git commit binds these outputs, including this result. No self-hash or future review is claimed.",
+  "artifact_bindings": [
+    {
+      "path": "docs/restart/B01/api-and-dependencies.md",
+      "bytes": 18006,
+      "sha256": "e73e689827570293d28a4f231e186ae1fc58110c244d1479e5f7a18dc575fc96"
+    },
+    {
+      "path": "docs/restart/B01/lifecycle.md",
+      "bytes": 12725,
+      "sha256": "cf8183c11031149596905f90ecc13d53d4b3acdaa8a04af0845fa57dd76edc2f"
+    },
+    {
+      "path": "docs/restart/B01/source-register.json",
+      "bytes": 42540,
+      "sha256": "10544de1339520e8c731adf2e6713a830c71e6d51caba605aee18ed806b7c15f"
+    }
+  ],
+  "criteria": [
+    {
+      "index": 0,
+      "parent_criterion": "Board SDK exposes buses/power/entropy/key handles/algorithms/storage/display/input/lifecycle without Nostr schemas or policy.",
+      "status": "documentary_proposal_pending_final_review_and_actual_implementation",
+      "evidence": [
+        "api-and-dependencies.md",
+        "source-register.json"
+      ],
+      "remaining": "Exact final substantive review and appropriate actual service/one-image/lifecycle implementation evidence. No documentary result silently closes parent task."
+    },
+    {
+      "index": 1,
+      "parent_criterion": "Start with libraries in one trusted firmware image; document absence of inter-application security isolation.",
+      "status": "documentary_proposal_pending_final_review_and_actual_implementation",
+      "evidence": [
+        "api-and-dependencies.md",
+        "source-register.json"
+      ],
+      "remaining": "Exact final substantive review and appropriate actual service/one-image/lifecycle implementation evidence. No documentary result silently closes parent task."
+    },
+    {
+      "index": 2,
+      "parent_criterion": "Pin electrical contracts from hardware and design version compatibility without circular or sibling-path dependencies.",
+      "status": "pending_H04_actual_electrical_pinning",
+      "evidence": [
+        "api-and-dependencies.md",
+        "source-register.json"
+      ],
+      "remaining": "Actual hardware commit/artifact/pins/rails/configuration from H04; a format is not electrical pinning."
+    },
+    {
+      "index": 3,
+      "parent_criterion": "Development, owner-secured and product-qualified states have explicit transition limits and secret-reset requirements.",
+      "status": "documentary_proposal_pending_final_review_and_actual_implementation",
+      "evidence": [
+        "lifecycle.md",
+        "source-register.json"
+      ],
+      "remaining": "Exact final substantive review and appropriate actual service/one-image/lifecycle implementation evidence. No documentary result silently closes parent task."
+    }
+  ],
+  "source_checks": {
+    "project_git_bindings_verified": 36,
+    "archive_checksums_verified": 6,
+    "upstream_source_bytes_equal": 10,
+    "method": "Exact Git mode/blob/bytes/SHA256 and archive members inspected; actual source semantic review, not prose-presence tests."
+  },
+  "unchanged_parent_criteria": true,
+  "git_diff_check": {
+    "exit_code": 0,
+    "scope": "Current documentary diff; staged check repeated before commit"
+  },
+  "check_failures_and_corrections": [
+    {
+      "kind": "Read-only survey path assumption",
+      "result": "Initial rg used extra archive-directory nesting and found no file; corrected to existing extracted source paths before inspecting source. No product source changed."
+    },
+    {
+      "kind": "Source-register inventory harness",
+      "result": "Initial attempt assumed graphics archive included LICENSE-MIT/APACHE and failed with KeyError; no partial register emitted. Actual archive inventory has no license bodies. Exact upstream root licenses fetched and Git-blob/SHA256 verified; register corrected."
+    },
+    {
+      "kind": "Documentation browser access",
+      "result": "Versioned docs.rs pages inaccessible via web tool; exact official registry and raw upstream bytes inspected instead. No source/library test failure inferred."
+    },
+    {
+      "kind": "Document editing context",
+      "result": "Initial multi-file patch did not match lifecycle line context and was rejected; inspected exact context and reapplied successfully before artifact hashing. No accepted review existed for this candidate."
+    }
+  ],
+  "new_dependencies_selected": false,
+  "executable_sdk_source_written": false,
+  "source_extraction_performed": false,
+  "physical_or_runtime_implementation_performed": false,
+  "final_distinct_review": {
+    "status": "pending",
+    "exact_candidate": null
+  },
+  "integration": {
+    "status": "held",
+    "reason": "A02 source freeze; actual adopted paths/source and current H01/S04 reconciliation required. Literal H04 electrical artifact missing.",
+    "task_complete": false
+  },
+  "next_action": "Distinct final substantive review of this exact documentary candidate; current H01e35ee73/S04f7af361 findings were reconciled as requirements only. Actual further source/A02 adoption reconciliation remains before integration. B02 executable scope needs an accepted real consumer/target addendum.",
+  "not_run": "No product suite or prose-presence test: change is documentary. Actual source/interface semantics and exact artifact bindings checked; no implementation/hardware acceptance follows.",
+  "current_context_reconciliation": {
+    "H01_e35ee73": "Unreviewed source-bound cache/GPIO/watchdog/kit findings motivate explicit buffer/master/attribution and progress-qualified recovery requirements. No concrete host/driver configuration is adopted.",
+    "S04_f7af361": "Unreviewed historical NXP session/reset/middleware notes motivate separating host epoch from backend session revocation. Historical SE050 is not SE051C2 admission. Exact applet remains pending."
+  }
+}
