@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "task": "B01",
+  "reviewer": "/root/b01_final_review",
+  "candidate_author": "/root",
+  "distinct_from_author": true,
+  "recorded_utc": "2026-10-20T09:41:42.153423+00:00",
+  "verdict": "PASS_bounded_documentary_only",
+  "candidate_commit": "27308eb7eb80bce22f411f9d40da159d901b7087",
+  "candidate_parent_commit": "8377f9264ca0c426dad0d79578c01be2e1d32509",
+  "review_record_binding": "Enclosing review commit binds this JSON and the review evidence; no self-hash or source-main merge is claimed.",
+  "owned_worktree": "/home/tux/nsealr/.restart-tools/goal/b01-final-review",
+  "owned_branch": "review/b01-final",
+  "allowed_write_scope": "docs/restart/B01/final-review/",
+  "author_outputs_unchanged": true,
+  "candidate_artifact_bindings": [
+    {
+      "path": "docs/restart/B01/api-and-dependencies.md",
+      "bytes": 18006,
+      "sha256": "e73e689827570293d28a4f231e186ae1fc58110c244d1479e5f7a18dc575fc96"
+    },
+    {
+      "path": "docs/restart/B01/lifecycle.md",
+      "bytes": 12725,
+      "sha256": "cf8183c11031149596905f90ecc13d53d4b3acdaa8a04af0845fa57dd76edc2f"
+    },
+    {
+      "path": "docs/restart/B01/result.json",
+      "bytes": 6157,
+      "sha256": "4bf503b0c2e35937c87a94c3dbf48eaf52182bc0408f6f72801b0aa00f62c886"
+    },
+    {
+      "path": "docs/restart/B01/source-register.json",
+      "bytes": 42540,
+      "sha256": "10544de1339520e8c731adf2e6713a830c71e6d51caba605aee18ed806b7c15f"
+    }
+  ],
+  "review_artifact_bindings": [
+    {
+      "path": "docs/restart/B01/final-review/report.md",
+      "bytes": 11749,
+      "sha256": "1ff4193d8745e7cddec962629225db64cd99a2e4fce604b7372a111a96fade46"
+    },
+    {
+      "path": "docs/restart/B01/final-review/verify.py",
+      "bytes": 11953,
+      "sha256": "a988cbb60a4af7c5a92d75ca6eccad7986cfffaf7abb7252cb33df6b87aae9f0"
+    },
+    {
+      "path": "docs/restart/B01/final-review/verification.json",
+      "bytes": 10745,
+      "sha256": "54b6c2e9d6b0843ff859244b831e1f324bad3762e1c5bdab054d8eb769f5d982"
+    }
+  ],
+  "authority": {
+    "preparation_candidate": "c82b065f30309c5a8f3db3e81f8addfce7b8ad30",
+    "preparation_acceptance": "8377f9264ca0c426dad0d79578c01be2e1d32509",
+    "preparation_distinct_review": "09bd394a6fc1502f192ee84cd99ad6ceb5e40f07",
+    "canonical_requirements": "f2ef70f522af4977e15f81554a8c6eadcdbe8097",
+    "all_four_criteria_byte_exact": true,
+    "resumption": "2026-10-20 handoff supersedes historical pause; current model-policy.json supersedes historical blanket Astra rule",
+    "additional_agents_spawned": false,
+    "model_escalation": false
+  },
+  "criteria": [
+    {
+      "index": 0,
+      "parent_criterion": "Board SDK exposes buses/power/entropy/key handles/algorithms/storage/display/input/lifecycle without Nostr schemas or policy.",
+      "documentary_review": "PASS_documentary_only",
+      "parent_status": "pending_actual_generic_service_implementation",
+      "rationale": "All eight services plus common rules cover real future callers, owner and buffer lifetimes, pending numerical bounds, errors, cancellation, reset, retained state, partial side effects and proof owners; no Nostr semantics or dependency selected.",
+      "parent_criterion_closed": false
+    },
+    {
+      "index": 1,
+      "parent_criterion": "Start with libraries in one trusted firmware image; document absence of inter-application security isolation.",
+      "documentary_review": "PASS_documentary_only",
+      "parent_status": "pending_actual_one_image_independent_consumer",
+      "rationale": "Explicit one trusted image and absence of malicious-firmware isolation; no fake extraction or unused scaffold; standalone consumers remain prospective.",
+      "parent_criterion_closed": false
+    },
+    {
+      "index": 2,
+      "parent_criterion": "Pin electrical contracts from hardware and design version compatibility without circular or sibling-path dependencies.",
+      "documentary_review": "PASS_documentary_only",
+      "parent_status": "pending_H04_actual_electrical_pinning",
+      "rationale": "Exact tuple format, immutable artifacts, unknown-tuple rejection and requalification rules are adequate decisions. No actual H04 artifact exists, so the literal pinning criterion is not met.",
+      "parent_criterion_closed": false
+    },
+    {
+      "index": 3,
+      "parent_criterion": "Development, owner-secured and product-qualified states have explicit transition limits and secret-reset requirements.",
+      "documentary_review": "PASS_documentary_only",
+      "parent_status": "pending_concrete_lifecycle_protocol_and_implementation_proof",
+      "rationale": "Transition and authority requirements preserve residual roots, backend sessions, partial reset, budgets, original recovery representation and antirollback limits. Concrete accepted target/protocol and physical proof remain missing.",
+      "parent_criterion_closed": false
+    }
+  ],
+  "findings": [],
+  "pending_requirements": [
+    {
+      "id": "B01-PENDING-H04",
+      "severity": "pending_requirement",
+      "requirements": "parent criterion 2; SDK-03",
+      "source": "api-and-dependencies.md:145-166; result.json criteria[2]",
+      "disposition": "Actual H04 electrical artifact is absent. No literal criterion closure or board default is admitted.",
+      "owner": "H04, then B02/B03"
+    },
+    {
+      "id": "B01-PENDING-IMPLEMENTATION",
+      "severity": "pending_requirement",
+      "requirements": "parent criteria 0,1,3; SDK-02/SDK-04/SDK-05",
+      "source": "api-and-dependencies.md:41-95; lifecycle.md:66-111; accepted brief",
+      "disposition": "No executable source, qualified bounds/provider, real independent consumer, concrete accepted custody/root/reset protocol or physical proof exists. Documentary pass does not satisfy these implementation requirements.",
+      "owner": "S04/H01/H02S/H04; accepted B02 scope and B03 evidence"
+    },
+    {
+      "id": "B01-PENDING-INTEGRATION",
+      "severity": "integration_hold",
+      "requirements": "preparation-acceptance conditions; A02 source freeze",
+      "source": "result.json integration/current_context_reconciliation; lifecycle.md:107-111; resume-2026-10-20/handoff.md",
+      "disposition": "Reconcile actual adopted A02 paths and current H01/S04 changes before normal integration. Exact changed outputs need renewed affected review.",
+      "owner": "coordinator"
+    }
+  ],
+  "manual_semantic_review": [
+    {
+      "topic": "bus",
+      "requirements": "SDK-02",
+      "assessment": "PASS_documentary_only",
+      "candidate_source": "api-and-dependencies.md:41-95; lifecycle.md:36-85",
+      "rationale": "Exact private peripheral/pin ownership; buffer return after hardware access; queued/idle/device completion; finite lock/transfer/recovery; partial command effects and failed flush/CS cleanup."
+    },
+    {
+      "topic": "power",
+      "requirements": "SDK-02/SDK-03/SDK-04",
+      "assessment": "PASS_documentary_only",
+      "candidate_source": "api-and-dependencies.md:41-95; lifecycle.md:36-85",
+      "rationale": "Exact domain/rail/reset control, settling/leak/backfeed and external-power requirements; dependent invalidation and retained roots; no off-is-erased claim."
+    },
+    {
+      "topic": "entropy",
+      "requirements": "SDK-02; accepted S02 entropy contract",
+      "assessment": "PASS_documentary_only",
+      "candidate_source": "api-and-dependencies.md:41-95; lifecycle.md:36-85",
+      "rationale": "Whole destination cleared on every returned error only after writer quiescence; no crypto output/fallback/reused bytes; unproved cleanup takes supported terminal recovery; actual fallible provider/link/invocation/fault proof pending."
+    },
+    {
+      "topic": "keys_and_algorithms",
+      "requirements": "SDK-02/SDK-04",
+      "assessment": "PASS_documentary_only",
+      "candidate_source": "api-and-dependencies.md:41-95; lifecycle.md:36-85",
+      "rationale": "Provider/board/object/algorithm/parameters/purpose and epochs bound; foreign/stale/revoked/wrong-purpose rejection; no raw-scalar/SE-handle/native-BIP340/consent equivalence; original representation recovery separate."
+    },
+    {
+      "topic": "storage",
+      "requirements": "SDK-02/SDK-04",
+      "assessment": "PASS_documentary_only",
+      "candidate_source": "api-and-dependencies.md:41-95; lifecycle.md:36-85",
+      "rationale": "Names owned namespace/staging and record geometry/version/integrity bounds; committed/not committed/unknown durable outcome; reconcile unknown before reuse; no AEAD antirollback/physical erasure inference."
+    },
+    {
+      "topic": "display",
+      "requirements": "SDK-02/SDK-03",
+      "assessment": "PASS_documentary_only",
+      "candidate_source": "api-and-dependencies.md:41-95; lifecycle.md:36-85",
+      "rationale": "Bounded pixel/geometry work and buffers; RAM/transport/controller/visible levels; failed presentation epoch invalidation and residual pixels; no trait success/hash/photon proof."
+    },
+    {
+      "topic": "input",
+      "requirements": "SDK-02/SDK-03",
+      "assessment": "PASS_documentary_only",
+      "candidate_source": "api-and-dependencies.md:41-95; lifecycle.md:36-85",
+      "rationale": "Device-owned typed events/time; sampling/debounce/queue/hold/boot-held and safe release/rearm requirements; no epoch replay or transport-origin approval; real attribution/physical correlation pending."
+    },
+    {
+      "topic": "lifecycle",
+      "requirements": "SDK-04",
+      "assessment": "PASS_documentary_only",
+      "candidate_source": "api-and-dependencies.md:41-95; lifecycle.md:36-85",
+      "rationale": "Owns transition admission, journal/outcomes and invalidation; complete required transition set, root/session/budget/rollback/residual-state requirements; no global qualification flag or universal erase protocol."
+    },
+    {
+      "topic": "upstream_bus",
+      "primary_source_locator": "embedded-hal1.0.0 src/spi.rs:134-160,347-363,438-481; src/i2c.rs:41-48; src/delay.rs:9-44; embedded-hal-async1.0.0 src/spi.rs",
+      "assessment": "PASS_documentary_only",
+      "rationale": "Return-before-idle SPI, implementation-defined transaction lock and attempted CS cleanup, idle I2C and minimum-only delays match candidate caveats; async needs exact driver cancellation proof."
+    },
+    {
+      "topic": "upstream_stream",
+      "primary_source_locator": "embedded-io0.7.1 src/lib.rs:299-354,374-420; embedded-io-async0.7.0 src/lib.rs:49-78,119-148",
+      "assessment": "PASS_documentary_only",
+      "rationale": "Partial progress and optional primitive cancel safety do not provide atomic frames or replay safety; candidate separates these obligations."
+    },
+    {
+      "topic": "upstream_entropy",
+      "primary_source_locator": "rand_core0.10.1 src/lib.rs:189-200,225-249; src/unwrap_err.rs:31-53",
+      "assessment": "PASS_documentary_only",
+      "rationale": "Actual trait carries errors without cleanup guarantee; review marker does not qualify source; panic wrapper cannot satisfy S02 fallibility."
+    },
+    {
+      "topic": "upstream_display",
+      "primary_source_locator": "embedded-graphics-core0.4.0 src/draw_target/mod.rs:281-304,306-324,388-424",
+      "assessment": "PASS_documentary_only",
+      "rationale": "Arbitrary draw iterators, RAM Infallible and short fill behavior do not establish bounded full presentation; candidate requires a selected bounded adapter."
+    },
+    {
+      "topic": "existing_core",
+      "primary_source_locator": "nSealr/nsealr@f2ef70f522af4977e15f81554a8c6eadcdbe8097:crates/nsealr-core/src/{nip19.rs,session/keyring.rs,review/buttons.rs,review/display.rs}; Cargo.toml",
+      "assessment": "PASS_documentary_only",
+      "rationale": "Software scalar and Nostr/session/review semantics correctly retained; MIT metadata and source ownership preserved; no extraction authorized without actual generic consumer."
+    },
+    {
+      "topic": "current_context",
+      "primary_source_locator": "H01e35ee73b53813b2892267edf9a07088b4a7c0036; S04f7af3616c5310686f2cbbc37dbfdf247b0d10cc0; older context commits in source-register",
+      "assessment": "PASS_documentary_only",
+      "rationale": "Read source notes as unreviewed requirement context. Cache/master/input/watchdog obligations and host-versus-backend session distinction are present. No host/SE051/protocol admission or physical/crypto certification follows."
+    }
+  ],
+  "checks": {
+    "source_probe": {
+      "command": "python3 docs/restart/B01/final-review/verify.py --refresh-upstream --receipt docs/restart/B01/final-review/verification.json",
+      "exit_code": 0,
+      "scope": "identity/source correspondence only"
+    },
+    "unique_git_register_bindings": 36,
+    "preparation_audit_bindings": 25,
+    "official_archives": 6,
+    "archive_members_verified": 56,
+    "existing_extracted_members_equal_archive": 46,
+    "fresh_immutable_upstream_source_bodies": 10,
+    "fresh_exact_upstream_license_bodies": 2,
+    "fresh_official_responses": 18,
+    "manifest_features_dependencies_license_origins_verified": true,
+    "graphics_archive_has_license_bodies": false,
+    "rand_core_origin_correction_and_historical_failures_preserved": true,
+    "candidate_delta_exactly_four_outputs": true,
+    "candidate_diff_check_exit_code": 0
+  },
+  "not_performed": [
+    "No install, SDK compile, implementation test suite or prose-presence tests",
+    "No new protocol model/crypto certification, hardware operation, fuse/key ceremony or physical measurements",
+    "No source main, task graph, authored output or other worktree changes"
+  ],
+  "parent_task_complete": false,
+  "implementation_admitted": false,
+  "hardware_or_release_admitted": false,
+  "integration": {
+    "status": "held",
+    "reason": "A02 actual-path/current H01/S04 reconciliation and missing H04 electrical artifact; frozen source mains stay unchanged"
+  },
+  "requested_author_changes": []
+}
