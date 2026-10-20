@@ -16,7 +16,11 @@ One trusted firmware image is the first execution model. Linked SDK libraries do
 
 Create `crates/`, `examples/` and `tools/` as real implementations land; no empty driver hierarchy is required now. Keep one clear support manifest for exact board/silicon/SE revisions, active interfaces and update/recovery behavior. Pin dependencies and prefer upstream drivers where their behavior has been verified.
 
-The initial task ownership is B01–B03 in the [project task graph](https://github.com/nSealr/nsealr/blob/main/docs/restart/work-items.json). Hardware freeze is a separate gate; this SDK does not silently choose an MCU or two secure elements.
+The initial task ownership is B01–B03 in the [project task graph](https://github.com/nSealr/nsealr/blob/main/plan/work-items.json). Hardware freeze is a separate gate; this SDK does not silently choose an MCU or two secure elements.
+
+## Reviewed design inputs
+
+B01 documentary work describes proposed [service and dependency boundaries](docs/restart/B01/api-and-dependencies.md) and [owner lifecycle requirements](docs/restart/B01/lifecycle.md). Electrical pinning, service implementation and physical qualification remain open; these documents do not claim supported hardware or an implemented SDK.
 
 ## Security boundaries
 
