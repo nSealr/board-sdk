@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "task": "B01",
+  "phase": "coordinator accepts bounded documentary decisions only",
+  "recorded_utc": "2026-10-20T09:56:22.731302+00:00",
+  "candidate_commit": "27308eb7eb80bce22f411f9d40da159d901b7087",
+  "candidate_author": "/root",
+  "distinct_review": {
+    "reviewer": "/root/b01_final_review",
+    "commit": "123de2ae71363b0d62d7e2240c0201539aa76075",
+    "verdict": "PASS_bounded_documentary_only",
+    "receipt": "docs/restart/B01/final-review/review.json",
+    "sha256": "17a9d71a7fd6fce5864a5776954c1906b2ee9022631bcce9c0af086dcec5dd75"
+  },
+  "byte_exact_review_copy_commit": "ee9b514061b88e3da7ba16ff13dca75a9a84e90d",
+  "coordinator_verification": {
+    "candidate_output_hashes": 4,
+    "review_payload_hashes": 3,
+    "review_json_sha256_verified": true,
+    "author_outputs_unchanged": true
+  },
+  "accepted_scope": [
+    "Generic service ownership/error/buffer/bounds and one-trusted-image requirements.",
+    "Version-pinned upstream interface comparison, no concrete dependency selection or code extraction.",
+    "Owner/update/reset and backend-session revocation requirements, not a concrete admitted protocol."
+  ],
+  "parent_criteria_closed": 0,
+  "task_complete": false,
+  "pending": [
+    "Literal criterion2 actual H04 electrical artifact/pins/rails/configuration.",
+    "Concrete current H01/S04/H02S target/protocol and measured numerical/cleanup/provider bounds.",
+    "Actual useful standalone B02/B03 consumer/service/recovery implementation and physical evidence.",
+    "A02 source freeze and actual adopted normative path/current-source reconciliation before ordinary integration."
+  ],
+  "authorized_next_step": "Use reviewed documentary requirements for actual target/consumer planning. Any executable SDK scope still needs its accepted real consumer/target/addendum; this receipt authorizes no crate/driver/production API, purchase or physical operation.",
+  "historical_result_note": "Original candidate result.json intentionally remains byte-exact and says final review pending at that candidate. This dated receipt records the later review/admission without rebinding old evidence."
+}
