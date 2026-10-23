@@ -1,0 +1,57 @@
+host-stream-diagnostic version=0.1.0 linux_host_only=true request_hex=42303150494e470a
+case=response phase=configured consumer_read_ms=1000 other_io_ms=1000 control_ms=3000
+case=response phase=ready endpoint=Consumer
+case=response phase=ready endpoint=Peer
+case=response phase=io event=RequestSeen([66, 48, 49, 80, 73, 78, 71, 10])
+case=response phase=io event=PeerSent([66, 48, 49, 80, 79, 78, 71, 10])
+case=response phase=io event=Read { count: 8, micros: 32 }
+case=response phase=io event=Closed(Consumer)
+case=response phase=io event=PeerEof
+case=response phase=io event=Closed(Peer)
+case=response phase=collecting
+case=response phase=joined consumer=true peer=true
+case=response phase=publish response_hex=423031504f4e470a
+case=response result=PASS elapsed_us=178 collected=true handles_closed=true
+case=timeout phase=configured consumer_read_ms=100 other_io_ms=1000 control_ms=3000
+case=timeout phase=ready endpoint=Consumer
+case=timeout phase=ready endpoint=Peer
+case=timeout phase=io event=RequestSeen([66, 48, 49, 80, 73, 78, 71, 10])
+case=timeout phase=io event=ReadError { raw: WouldBlock, upstream: Other, os: Some(11), micros: 100591 }
+case=timeout phase=read-error raw=WouldBlock upstream=Other os=Some(11) elapsed_us=100591
+case=timeout phase=io event=Closed(Consumer)
+case=timeout phase=io event=PeerEof
+case=timeout phase=io event=Closed(Peer)
+case=timeout phase=collecting
+case=timeout phase=joined consumer=true peer=true
+case=timeout phase=rejected raw=WouldBlock upstream=Other os=Some(11) published=false
+case=timeout result=PASS elapsed_us=100745 collected=true handles_closed=true
+case=cancel phase=configured consumer_read_ms=1000 other_io_ms=1000 control_ms=3000
+case=cancel phase=ready endpoint=Consumer
+case=cancel phase=ready endpoint=Peer
+case=cancel phase=io event=RequestSeen([66, 48, 49, 80, 73, 78, 71, 10])
+case=cancel phase=io event=PeerSent([66, 48, 49])
+case=cancel phase=io event=Read { count: 3, micros: 123 }
+case=cancel phase=shutdown-after-observed-prefix bytes=3
+case=cancel phase=io event=Read { count: 0, micros: 18 }
+case=cancel phase=io event=PeerEof
+case=cancel phase=io event=Closed(Peer)
+case=cancel phase=io event=Closed(Consumer)
+case=cancel phase=collecting
+case=cancel phase=joined consumer=true peer=true
+case=cancel phase=rejected error=UnexpectedEof published=false
+case=cancel result=PASS elapsed_us=355 collected=true handles_closed=true
+case=peer-eof phase=configured consumer_read_ms=1000 other_io_ms=1000 control_ms=3000
+case=peer-eof phase=ready endpoint=Consumer
+case=peer-eof phase=ready endpoint=Peer
+case=peer-eof phase=io event=RequestSeen([66, 48, 49, 80, 73, 78, 71, 10])
+case=peer-eof phase=io event=PeerSent([66, 48, 49])
+case=peer-eof phase=io event=Read { count: 3, micros: 38 }
+case=peer-eof phase=io event=Read { count: 0, micros: 0 }
+case=peer-eof phase=io event=Closed(Consumer)
+case=peer-eof phase=io event=PeerEof
+case=peer-eof phase=io event=Closed(Peer)
+case=peer-eof phase=collecting
+case=peer-eof phase=joined consumer=true peer=true
+case=peer-eof phase=rejected error=UnexpectedEof published=false
+case=peer-eof result=PASS elapsed_us=317 collected=true handles_closed=true
+result=PASS cases=4 board_support=false physical_evidence=false

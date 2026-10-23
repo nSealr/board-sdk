@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "git",
+    "diff",
+    "--cached",
+    "--check",
+    "a14c0391457c6291899f650caef308b3694b44e8"
+  ],
+  "exit_code": 0,
+  "scope": "Entire new review prefix including raw command logs; no raw edited for formatting",
+  "paths_before_this_check_receipt": 19,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

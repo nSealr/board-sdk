@@ -1,0 +1,79 @@
+{
+  "candidate": "a14c0391457c6291899f650caef308b3694b44e8",
+  "tree": "eff7e17253e20030cd33fd771d58dbbfc8104980",
+  "source_freeze": "322d2467b2bcc79064ea8771d2eeb09420913a4d",
+  "four_compiled_inputs_equal_source_freeze": true,
+  "author_bindings_verified": 52,
+  "author_result_sha256": "d5b9bfabeedb6b0f3e106942429a231bb635adda82f6356a69661737fc42af34",
+  "archive_command": [
+    "git",
+    "archive",
+    "--format=tar",
+    "--output",
+    "/home/tux/nsealr/.restart-tools/goal/b01-host-stream-consumer-review-runtime/package.tar",
+    "a14c0391457c6291899f650caef308b3694b44e8",
+    "examples/host-stream-diagnostic"
+  ],
+  "extract_command": [
+    "tar",
+    "--extract",
+    "--file",
+    "/home/tux/nsealr/.restart-tools/goal/b01-host-stream-consumer-review-runtime/package.tar",
+    "--strip-components=2",
+    "--directory",
+    "/home/tux/nsealr/.restart-tools/goal/b01-host-stream-consumer-review-runtime/export"
+  ],
+  "archive_sha256": "9f408409ac80b9895f3862350b4a68adf8b8af732963477bf27bebffb3ddaf00",
+  "archive_bytes": 30720,
+  "export": "/home/tux/nsealr/.restart-tools/goal/b01-host-stream-consumer-review-runtime/export",
+  "package_files": [
+    {
+      "path": "Cargo.lock",
+      "sha256": "01e5640ac5fbee79ece4146901e7f1eb972a64d8c17499f6b326f21d118b5dcb",
+      "bytes": 396
+    },
+    {
+      "path": "Cargo.toml",
+      "sha256": "8857f91492474e60a6e018c6687e095e6d55de196f0cb1cb97051942946ffab3",
+      "bytes": 302
+    },
+    {
+      "path": "README.md",
+      "sha256": "f8872b19fcb46a81eeeba331b9a5fef11dce7e2e6deac35066beabc41c68d7ea",
+      "bytes": 3466
+    },
+    {
+      "path": "rust-toolchain.toml",
+      "sha256": "7d21c66a15f41bad66b82ed06a289f5dc8a6e3751951d2696bbf20ce296f2b0f",
+      "bytes": 86
+    },
+    {
+      "path": "src/main.rs",
+      "sha256": "cd36d33330990afb17f36564ac262d01936b5e7f00e32d9e42edd37249243b3c",
+      "bytes": 16772
+    }
+  ],
+  "fresh_target": "/home/tux/nsealr/.restart-tools/goal/b01-host-stream-consumer-review-runtime/target",
+  "cache_origin": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-standalone/cargo-home",
+  "cache_files": [
+    {
+      "relative_path": "registry/index/index.crates.io-1949cf8c6b5b557f/.cache/em/be/embedded-io",
+      "bytes": 5604,
+      "sha256": "f2d61603b481f5d451040907d168a87b20ce4b714d50acea1d3980675071dbde"
+    },
+    {
+      "relative_path": "registry/index/index.crates.io-1949cf8c6b5b557f/config.json",
+      "bytes": 76,
+      "sha256": "5b943a2c6f7eb743f7308aba07bdbb47d9ae44aafecd832d7f15df186afbafb3"
+    },
+    {
+      "relative_path": "registry/cache/index.crates.io-1949cf8c6b5b557f/embedded-io-0.7.1.crate",
+      "bytes": 16035,
+      "sha256": "9eb1aa714776b75c7e67e1da744b81a129b3ff919c8712b5e1b32252c1f07cc7"
+    }
+  ],
+  "compiled_artifacts_copied": false,
+  "resolved_source_copied": false,
+  "network_acquisition": false,
+  "original_upstream_lib_sha256": "1077dd3ed8cc4c44d2da1ef5b1e6f4322191b3e25c12407ace75df55b9083963"
+}
