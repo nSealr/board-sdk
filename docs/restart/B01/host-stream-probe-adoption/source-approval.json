@@ -1,0 +1,35 @@
+{
+  "status": "PASS_exact_source_and_distinct_review_only_hosted_gates_pending",
+  "recorded_utc": "2026-10-23T17:53:35.108070+00:00",
+  "coordinator": "/root",
+  "repository": "nSealr/board-sdk",
+  "base_main": "9ad3634dff5eeb3d578cfb7afc3a7680abcaa12a",
+  "author_candidate": "a14c0391457c6291899f650caef308b3694b44e8",
+  "author_tree": "eff7e17253e20030cd33fd771d58dbbfc8104980",
+  "distinct_review": "06e36af3f3f2d7860e461ad5b50c8bd44f7299c1",
+  "distinct_review_tree": "7b8b94174d9175d88aabc4d44f2af037addc422d",
+  "review_sha256": "ea9c0cab8fc0f07a0d419b90a4e5d7e8c610b3b136159298fae08fa928748098",
+  "report_sha256": "f303ae3ea21dcf3dec9f606bbd7b8ec86649f77446a26836d0df0191c0f9e39c",
+  "verified_author_bindings": 52,
+  "verified_review_members": 22,
+  "review_only_additions": 23,
+  "author_postimages_unchanged": true,
+  "implementation_unchanged_since": "322d2467b2bcc79064ea8771d2eeb09420913a4d",
+  "early_real_integration": "Ready/request/response/silent timeout/observed-prefix cancellation/partial EOF/shutdown and joins before packaging",
+  "independent_replay": "One clean standalone build and default four real socket cases, eight actual joins; source and frozen expectations unchanged",
+  "proof_reuse": "Source-identical author fmt/clippy and early/standalone proof retained; distinct reviewer replay retained, no redundant local campaign",
+  "workflow": "One finite PR/main-push job: pinned checkout/Rust, fmt, strict Clippy, locked build, default four cases under runtime-only watchdog",
+  "pending": [
+    "Actual PR merge-tree CI and check provenance",
+    "Normal protected rebase integration with exact-source/tree correspondence",
+    "Actual integrated main CI and clean remote/source acceptance"
+  ],
+  "parent_criteria_closed": [],
+  "physical_or_board_qualification": false,
+  "limits": [
+    "Linux host stream diagnostic only; no exported SDK API or hardware driver",
+    "No security, electrical, lifecycle, custody or physical release qualification",
+    "Different recorded ELFs do not establish reproducibility",
+    "All B01/B02/B03 criteria remain open; general Rust rewrites remain deferred"
+  ]
+}
