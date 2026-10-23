@@ -1,0 +1,49 @@
+{
+  "status": "ACCEPTED_SCOPED_REAL_LINUX_HOST_STREAM_COMPONENT_ON_ACTUAL_MAIN",
+  "recorded_utc": "2026-10-23T18:18:52.805733+00:00",
+  "repository": "nSealr/board-sdk",
+  "actual_main": "cce25b240c70152e226a7b5a2cc0526006cb0a79",
+  "tree": "842d38e887352462f36acf5a2411708aa541031f",
+  "previous_main": "9ad3634dff5eeb3d578cfb7afc3a7680abcaa12a",
+  "normal_protected_rebase_PR": 2,
+  "reviewed_head": "4435932e811705c0fffa439502d8369d3a7e28ba",
+  "consumer_author": "a14c0391457c6291899f650caef308b3694b44e8",
+  "consumer_review": "06e36af3f3f2d7860e461ad5b50c8bd44f7299c1",
+  "root_authored_workflow_correction": "e8a3121da60ee448a54af42eb63953ad156f0ae6",
+  "correction_distinct_review": "4435932e811705c0fffa439502d8369d3a7e28ba",
+  "pr_run": 40000404034,
+  "pr_check": 120574691233,
+  "tested_merge": "ecc563c4d83697f173cf0de0a0ec6d1c51290b21",
+  "main_run": 40001107859,
+  "main_check": 120577104137,
+  "check_app": 15368,
+  "source_correspondence": "Reviewed head, tested PR merge and actual integrated main have the exact same whole tree. Previous main is an actual ancestor, history linear; canonical local main clean and remote-matched.",
+  "required_branch_gates": "Strict host-stream-diagnostic/app15368 added; administrators, linear history, conversations, no force/deletion preserved. Normal merge used no admin bypass.",
+  "runtime": "Actual hosted fmt/strict Clippy/locked build and default four real socket cases on both PR and actual main; eight actual endpoint joins per run before publication. Original eleven-member logs captured per run.",
+  "original_failure_preserved": {
+    "run": 39998857797,
+    "source": "ba44738ff45225c0fef757afc2b299a7591677a8",
+    "meaning": "Workflow validation defect, no jobs or consumer tests; unsupported runner context corrected explicitly."
+  },
+  "observation_correction": "Immediately after successful push the first PR API still returned oldba447; a later observation confirmed443 and its real PR run. No source/test change or second push was needed.",
+  "proofs": [
+    {
+      "path": "pr-ci-validation.json",
+      "sha256": "4c43feff132fbb343e9a2585e14fa6ac51bfd737ef46d3fd6b070417675df478"
+    },
+    {
+      "path": "main-ci-validation.json",
+      "sha256": "7c1d73308e60b8b3589d61f9c924dc9456f44925c20b9d81060c253c128211b6"
+    }
+  ],
+  "raw_retention": "Existing private nSealr/workspace active2026-10-20 checkpoint core-delivery/sdk-host-stream; original runtime /goal/sdk-host-stream-delivery-2026-10-23. No raw build cache, credentials or third-party manual is published here.",
+  "parent_criteria_closed": [],
+  "all_B01_B02_B03_criteria_open": true,
+  "physical_or_board_qualification": false,
+  "limits": [
+    "Host-only non-Nostr diagnostic, no exported SDK API/hardware driver or electrical selection",
+    "No lifecycle, entropy, custody, consent, secret isolation, physical or release qualification",
+    "No cross-build ELF reproducibility or hard total-operation deadline claim",
+    "General Rust rewrite remains deferred"
+  ]
+}

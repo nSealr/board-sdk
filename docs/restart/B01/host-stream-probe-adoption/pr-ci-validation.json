@@ -1,0 +1,26 @@
+{
+  "recorded_utc": "2026-10-23T18:09:29.276625+00:00",
+  "status": "PASS_actual_PR_merge_tree_source_and_hosted_gates",
+  "head": "4435932e811705c0fffa439502d8369d3a7e28ba",
+  "base": "9ad3634dff5eeb3d578cfb7afc3a7680abcaa12a",
+  "tested_merge": "ecc563c4d83697f173cf0de0a0ec6d1c51290b21",
+  "tested_merge_parents": [
+    "9ad3634dff5eeb3d578cfb7afc3a7680abcaa12a",
+    "4435932e811705c0fffa439502d8369d3a7e28ba"
+  ],
+  "tree": "842d38e887352462f36acf5a2411708aa541031f",
+  "run": 40000404034,
+  "check": 120574691233,
+  "app": 15368,
+  "original_capture_members": 11,
+  "actual_job_steps": 9,
+  "default_real_cases": 4,
+  "actual_endpoint_joins": 8,
+  "source_unchanged_since_distinct_reviews": true,
+  "new_required_check": "host-stream-diagnostic/app15368, strict, other protection properties preserved",
+  "pending": [
+    "Normal protected rebase integration",
+    "Actual-main hosted/source acceptance"
+  ],
+  "parent_criteria_closed": []
+}

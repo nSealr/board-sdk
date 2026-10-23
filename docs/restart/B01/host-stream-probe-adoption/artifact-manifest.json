@@ -1,0 +1,26 @@
+{
+  "scope": "Actual-main adoption summaries only; self excluded",
+  "actual_main": "cce25b240c70152e226a7b5a2cc0526006cb0a79",
+  "members": [
+    {
+      "path": "docs/restart/B01/host-stream-probe-adoption/README.md",
+      "bytes": 1332,
+      "sha256": "d677566194fa59962bb6bb1d74e842cf2b2250823be9552949f4b9dd96cc56bf"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe-adoption/actual-main-acceptance.json",
+      "bytes": 3014,
+      "sha256": "2d97202ce56af72d1d1ab45bc4c95bf04a752e01c5a2939950836614d767a4a7"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe-adoption/pr-ci-validation.json",
+      "bytes": 948,
+      "sha256": "4c43feff132fbb343e9a2585e14fa6ac51bfd737ef46d3fd6b070417675df478"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe-adoption/main-ci-validation.json",
+      "bytes": 949,
+      "sha256": "7c1d73308e60b8b3589d61f9c924dc9456f44925c20b9d81060c253c128211b6"
+    }
+  ]
+}

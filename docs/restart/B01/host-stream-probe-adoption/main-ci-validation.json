@@ -1,0 +1,23 @@
+{
+  "status": "PASS_actual_integrated_main_source_and_hosted_checks_only",
+  "recorded_utc": "2026-10-23T18:17:15.227432+00:00",
+  "repository": "nSealr/board-sdk",
+  "actual_main": "cce25b240c70152e226a7b5a2cc0526006cb0a79",
+  "previous_main": "9ad3634dff5eeb3d578cfb7afc3a7680abcaa12a",
+  "reviewed_head": "4435932e811705c0fffa439502d8369d3a7e28ba",
+  "same_exact_tree": "842d38e887352462f36acf5a2411708aa541031f",
+  "normal_protected_rebase_PR": 2,
+  "main_run": 40001107859,
+  "main_check": 120577104137,
+  "app": 15368,
+  "all_nine_job_steps": "success",
+  "actual_default_cases": 4,
+  "actual_endpoint_joins": 8,
+  "original_log_members": 11,
+  "local_main": "clean and fast-forwarded, exact remote HEAD",
+  "linear_history_and_previous_ancestor": true,
+  "whole_tree_source_correspondence": true,
+  "strict_required_check_and_previous_protections_preserved": true,
+  "parent_criteria_closed": [],
+  "physical_or_board_qualification": false
+}
