@@ -1,0 +1,27 @@
+{
+  "kind": "workflow_configuration_defect_not_consumer_or_test_failure",
+  "recorded_utc": "2026-10-23T17:57:19.751801+00:00",
+  "failed_source": "ba44738ff45225c0fef757afc2b299a7591677a8",
+  "run": 39998857797,
+  "event": "push",
+  "jobs_started": 0,
+  "actual_annotation": "(Line: 20, Col: 25): Unrecognized named-value: 'runner'. Located at position 1 within expression: runner.temp",
+  "source": {
+    "url": "https://docs.github.com/en/actions/reference/workflows-and-actions/contexts",
+    "sha256": "2001144ebac46d16dc2bd05f1e01aff8df246683fb89315ab20752609e4c7f64",
+    "property": "runner context is unavailable at jobs.<job_id>.env; default RUNNER_TEMP and GITHUB_ENV are used inside the execution step instead"
+  },
+  "correction": "Remove job-level runner.temp expression; set identical temporary target-directory intent through GITHUB_ENV in the existing setup step before all Cargo compilation/runtime steps",
+  "unchanged": [
+    "All consumer/package/lock/toolchain inputs",
+    "All four case expectations, thresholds and cleanup",
+    "Author and independent local raw proof",
+    "All historical reports and original root approval",
+    "Single finite PR/main workflow events, job deadline, fmt/Clippy/build/default runtime gates"
+  ],
+  "pending": [
+    "Distinct affected workflow correction review",
+    "Actual PR merge-tree and resulting-main hosted success"
+  ],
+  "physical_qualification": false
+}

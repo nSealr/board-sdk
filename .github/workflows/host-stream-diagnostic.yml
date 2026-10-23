@@ -17,7 +17,6 @@ jobs:
         working-directory: examples/host-stream-diagnostic
     env:
       RUSTUP_TOOLCHAIN: "1.95.0"
-      CARGO_TARGET_DIR: ${{ runner.temp }}/host-stream-diagnostic-target
       CARGO_TERM_COLOR: never
     steps:
       - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
@@ -25,6 +24,7 @@ jobs:
           persist-credentials: false
       - name: Install the existing pinned Rust toolchain
         run: |
+          echo "CARGO_TARGET_DIR=$RUNNER_TEMP/host-stream-diagnostic-target" >> "$GITHUB_ENV"
           rustup toolchain install 1.95.0 --profile minimal --component rustfmt --component clippy
           rustc -Vv
           cargo -V
