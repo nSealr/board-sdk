@@ -1,0 +1,185 @@
+{
+  "verdict": "PASS_limited_root_CI_environment_correction_only",
+  "findings": [],
+  "recorded_utc": "2026-10-23T18:03:59.978177+00:00",
+  "reviewer": "/root/sdk_dependency_probe; distinct from /root author of this CI correction",
+  "review_scope": "Only root correction e8; no self-review of original consumer and no repeat of A02 consumer review.",
+  "candidate": "e8a3121da60ee448a54af42eb63953ad156f0ae6",
+  "candidate_tree": "058e9ac30f2ef4363275d8be662a46cb66f1fe8c",
+  "parent": "ba44738ff45225c0fef757afc2b299a7591677a8",
+  "candidate_bindings": [
+    {
+      "path": ".github/workflows/host-stream-diagnostic.yml",
+      "mode": "100644",
+      "blob": "6b6ef033da7c2b25a1fcb1dba7d3434c402e3b7c",
+      "bytes": 1302,
+      "sha256": "a8820a9a3568013bb33e77b5d0cb6c41f257e5ed62124cfc4bf474a79002754a"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe-adoption/README.md",
+      "mode": "100644",
+      "blob": "0c1dee8ce8c6fd68cb372b6f26a301d83570b7a8",
+      "bytes": 998,
+      "sha256": "cbb0c68f50caabf8de389c8e7452a0cf38e2ae063c3c1354b58d49bd81e5c353"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe-adoption/workflow-correction.json",
+      "mode": "100644",
+      "blob": "ecbca4d5d11dda3d2089f597dbc2641db65c525b",
+      "bytes": 1425,
+      "sha256": "1bd33c5ed2df0c3d50fa1b1420a9a717bcc671ad84fbba7961b2a0a5ab422a32"
+    }
+  ],
+  "source_comparison": {
+    "workflow": "PASS: only remove unavailable job.env expression and prepend environment-file write to existing setup; all other parsed structure exact",
+    "all_other_base_postimages_unchanged": 96,
+    "sole_new_candidate_file": "docs/restart/B01/host-stream-probe-adoption/workflow-correction.json"
+  },
+  "original_failure": {
+    "run": 39998857797,
+    "head_sha": "ba44738ff45225c0fef757afc2b299a7591677a8",
+    "event": "push",
+    "conclusion": "failure",
+    "jobs_started": 0,
+    "check_runs": 0,
+    "annotation": "(Line: 20, Col: 25): Unrecognized named-value: 'runner'. Located at position 1 within expression: runner.temp",
+    "classification": "Workflow validation defect before any consumer/job execution; preserved, not product failure."
+  },
+  "primary_sources": [
+    {
+      "url": "https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#context-availability",
+      "property": "jobs.<job_id>.env excludes runner; runtime default variables are used inside the run step.",
+      "local_source_sha256": "2001144ebac46d16dc2bd05f1e01aff8df246683fb89315ab20752609e4c7f64"
+    },
+    {
+      "url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands#setting-an-environment-variable",
+      "property": "One key=value written to GITHUB_ENV is available to subsequent steps; writing step is not automatically updated."
+    },
+    {
+      "url": "https://docs.github.com/en/actions/reference/workflows-and-actions/variables#default-environment-variables",
+      "property": "RUNNER_TEMP and GITHUB_ENV are runner-provided default step variables; the correction reads rather than overwrites them."
+    }
+  ],
+  "step_semantics": "Environment write is first in existing setup. Its remaining rustup toolchain install, rustc-Vv and cargo-V require no consumer target directory. All fmt/clippy/build/runtime steps follow setup; target path and invocation remain quoted and identical in intent.",
+  "minimal_equivalent_propagation_probe": {
+    "scope": "Minimal equivalent environment-file propagation with task-specific names; not actual hosted GitHub runner execution. No Cargo/build/consumer run.",
+    "actual_workflow_line": "echo \"CARGO_TARGET_DIR=$RUNNER_TEMP/host-stream-diagnostic-target\" >> \"$GITHUB_ENV\"",
+    "only_test_variable_renames": {
+      "RUNNER_TEMP": "NSEALR_CI_REVIEW_RUNNER_TEMP",
+      "GITHUB_ENV": "NSEALR_CI_REVIEW_ENV_FILE",
+      "CARGO_TARGET_DIR": "NSEALR_CI_REVIEW_TARGET_DIR"
+    },
+    "writer_argv": [
+      "bash",
+      "--noprofile",
+      "--norc",
+      "-c",
+      "set -eu\ntest \"${NSEALR_CI_REVIEW_TARGET_DIR+x}\" != x\necho \"NSEALR_CI_REVIEW_TARGET_DIR=$NSEALR_CI_REVIEW_RUNNER_TEMP/host-stream-diagnostic-target\" >> \"$NSEALR_CI_REVIEW_ENV_FILE\"\ntest \"${NSEALR_CI_REVIEW_TARGET_DIR+x}\" != x\nprintf \"%s\\n\" \"writer_current_step_unset=true\"\n"
+    ],
+    "writer_exit_code": 0,
+    "writer_stdout": "writer_current_step_unset=true\n",
+    "writer_stderr": "",
+    "environment_file_utf8": "NSEALR_CI_REVIEW_TARGET_DIR=/tmp/nsealr-ci-correction-q0kp_zx4/runner temporary/host-stream-diagnostic-target\n",
+    "next_step_load": "Read one literal key=value assignment and pass it as environment to a distinct shell process; no shell eval/source.",
+    "reader_argv": [
+      "bash",
+      "--noprofile",
+      "--norc",
+      "-c",
+      "set -eu\nprintf \"%s\\n\" \"$NSEALR_CI_REVIEW_TARGET_DIR\"\n"
+    ],
+    "reader_exit_code": 0,
+    "reader_stdout": "/tmp/nsealr-ci-correction-q0kp_zx4/runner temporary/host-stream-diagnostic-target\n",
+    "reader_stderr": "",
+    "current_writer_does_not_receive_new_value": true,
+    "subsequent_process_receives_exact_value": true,
+    "space_in_temp_and_environment_file_paths_preserved": true,
+    "temporary_artifacts_removed_after_probe": true,
+    "global_or_GITHUB_RUNNER_environment_modified": false,
+    "environment_override": {
+      "NSEALR_CI_REVIEW_RUNNER_TEMP": "/tmp/nsealr-ci-correction-q0kp_zx4/runner temporary",
+      "NSEALR_CI_REVIEW_ENV_FILE": "/tmp/nsealr-ci-correction-q0kp_zx4/step environment",
+      "NSEALR_CI_REVIEW_TARGET_DIR": "absent before writer; literal file value passed only to reader"
+    }
+  },
+  "prior_distinct_consumer_review": {
+    "reviewer": "/root/a02_resume",
+    "commit": "06e36af3f3f2d7860e461ad5b50c8bd44f7299c1",
+    "review_path": "docs/restart/B01/host-stream-probe-review/review.json",
+    "review_sha256": "ea9c0cab8fc0f07a0d419b90a4e5d7e8c610b3b136159298fae08fa928748098",
+    "still_applicable_to_unchanged_consumer": true,
+    "compiled_inputs": [
+      {
+        "path": "examples/host-stream-diagnostic/Cargo.toml",
+        "sha256": "8857f91492474e60a6e018c6687e095e6d55de196f0cb1cb97051942946ffab3"
+      },
+      {
+        "path": "examples/host-stream-diagnostic/Cargo.lock",
+        "sha256": "01e5640ac5fbee79ece4146901e7f1eb972a64d8c17499f6b326f21d118b5dcb"
+      },
+      {
+        "path": "examples/host-stream-diagnostic/rust-toolchain.toml",
+        "sha256": "7d21c66a15f41bad66b82ed06a289f5dc8a6e3751951d2696bbf20ce296f2b0f"
+      },
+      {
+        "path": "examples/host-stream-diagnostic/src/main.rs",
+        "sha256": "cd36d33330990afb17f36564ac262d01936b5e7f00e32d9e42edd37249243b3c"
+      }
+    ],
+    "historical_receipts_modified": false
+  },
+  "unchanged_gates": [
+    "One PR/main job and10min job deadline",
+    "Immutable checkout pin andRust1.95.0",
+    "Strict fmt/Clippy, locked release build and default four cases",
+    "100ms/1s/3s/30s timing inputs, no new skip/continue-on-error"
+  ],
+  "not_performed": [
+    "consumer rebuild",
+    "consumer smoke replay",
+    "hosted CI query/run/PR change",
+    "push of root delivery branch",
+    "historical report correction",
+    "product/driver/task/physical/release qualification"
+  ],
+  "limits": "The local two-process probe validates equivalent shell/file/environment propagation only, not hosted GitHub execution. Root PR/main hosted success remains pending.",
+  "local_receipt_bindings": [
+    {
+      "path": "/home/tux/nsealr/.restart-tools/goal/sdk-host-stream-delivery-2026-10-23/run-39998857797.json",
+      "bytes": 12651,
+      "sha256": "39d52aa9a551098f2c2143731419ab68e6f59a13216d79a74b81ca70c569e808"
+    },
+    {
+      "path": "/home/tux/nsealr/.restart-tools/goal/sdk-host-stream-delivery-2026-10-23/jobs-39998857797.json",
+      "bytes": 27,
+      "sha256": "b3dab5870ff3a8209160335de7c1077b89e461d875d9041ac9d8b8ed7c1666f6"
+    },
+    {
+      "path": "/home/tux/nsealr/.restart-tools/goal/sdk-host-stream-delivery-2026-10-23/check-runs-39998857797.json",
+      "bytes": 33,
+      "sha256": "e83cfac35507982a40cfeb776ce85aa0367e7646f81fe857df4a6c841ea8a170"
+    },
+    {
+      "path": "/home/tux/nsealr/.restart-tools/goal/sdk-host-stream-delivery-2026-10-23/check-suite-39998857797.json",
+      "bytes": 7902,
+      "sha256": "5d468b69c7fbe0967eae1fed0c9134d6bac1d097d40ef53616fd7acb48a4b5bc"
+    },
+    {
+      "path": "/home/tux/nsealr/.restart-tools/goal/sdk-host-stream-delivery-2026-10-23/run-39998857797-page.html",
+      "bytes": 188738,
+      "sha256": "d6f4c260ab60410ef26e7186fb1d3beb64b67001bb09f07707e9b3068ea77eea"
+    },
+    {
+      "path": "/home/tux/nsealr/.restart-tools/goal/sdk-host-stream-delivery-2026-10-23/github-contexts-source.html",
+      "bytes": 1017373,
+      "sha256": "2001144ebac46d16dc2bd05f1e01aff8df246683fb89315ab20752609e4c7f64"
+    }
+  ],
+  "report": {
+    "path": "docs/restart/B01/host-stream-ci-correction-review/report.md",
+    "sha256": "a1fb353f9b6de301d9d3fa31005f7e8c09848437627b82683381f0799d4b6b55"
+  },
+  "publication_at_review_freeze": "Not attempted yet. At most one ordinary push of this review branch follows the local commit; separate task-specific receipt preserves exact stdout/stderr/exit. No retry or root-branch push.",
+  "whitespace_check_exit_code": 0,
+  "parent_criteria_closed": []
+}
