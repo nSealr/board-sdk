@@ -1,0 +1,72 @@
+{
+  "source": "actual fresh standalone cargo metadata/locked resolution and downloaded archive, not a declared-only trait pin",
+  "packages": [
+    {
+      "name": "embedded-io",
+      "version": "0.7.1",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "license": "MIT OR Apache-2.0",
+      "dependency_count": 1,
+      "manifest_path": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-standalone/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/embedded-io-0.7.1/Cargo.toml"
+    },
+    {
+      "name": "host-stream-diagnostic",
+      "version": "0.1.0",
+      "source": null,
+      "license": "MIT",
+      "dependency_count": 1,
+      "manifest_path": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-standalone/export/Cargo.toml"
+    }
+  ],
+  "actual_dependency_features": [
+    "alloc",
+    "std"
+  ],
+  "root_dependency": {
+    "name": "embedded-io",
+    "source": "registry+https://github.com/rust-lang/crates.io-index",
+    "req": "=0.7.1",
+    "kind": null,
+    "rename": null,
+    "optional": false,
+    "uses_default_features": false,
+    "features": [
+      "std"
+    ],
+    "target": null,
+    "registry": null
+  },
+  "third_party_archive": {
+    "path": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-standalone/cargo-home/registry/cache/index.crates.io-1949cf8c6b5b557f/embedded-io-0.7.1.crate",
+    "bytes": 16035,
+    "sha256": "9eb1aa714776b75c7e67e1da744b81a129b3ff919c8712b5e1b32252c1f07cc7",
+    "members": [
+      {
+        "path": "src/lib.rs",
+        "bytes": 24045,
+        "sha256": "1077dd3ed8cc4c44d2da1ef5b1e6f4322191b3e25c12407ace75df55b9083963",
+        "archive_equals_actual_resolved_member": true
+      },
+      {
+        "path": "Cargo.toml",
+        "bytes": 1109,
+        "sha256": "6f021b6c3db0f1e47398e7ff99a9e1852ac96b9dcdd0fd9219095568e725d09a",
+        "archive_equals_actual_resolved_member": true
+      },
+      {
+        "path": "LICENSE-MIT",
+        "bytes": 1067,
+        "sha256": "47674f8b7d98c232c6f81346c4cfe48933d913a9e257d7a522ad9f42e3dd61e1",
+        "archive_equals_actual_resolved_member": true
+      },
+      {
+        "path": "LICENSE-APACHE",
+        "bytes": 10847,
+        "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+        "archive_equals_actual_resolved_member": true
+      }
+    ]
+  },
+  "no_nostr_or_sibling_or_path_dependency": true,
+  "no_optional_defmt_enabled": true
+}

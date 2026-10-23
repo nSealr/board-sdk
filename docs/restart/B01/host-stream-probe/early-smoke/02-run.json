@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "timeout",
+    "--signal=TERM",
+    "--kill-after=2s",
+    "30s",
+    "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-run/target/x86_64-unknown-linux-gnu/release/host-stream-diagnostic"
+  ],
+  "cwd": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-scope",
+  "started_utc": "2026-10-23T17:28:20.736975+00:00",
+  "elapsed_seconds": 0.10646906960755587,
+  "exit_code": 0,
+  "stdout": "02-run.stdout.log",
+  "stderr": "02-run.stderr.log",
+  "build_completed_before_runtime_watchdog": true,
+  "source_commit": "322d2467b2bcc79064ea8771d2eeb09420913a4d"
+}

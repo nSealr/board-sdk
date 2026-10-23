@@ -1,0 +1,25 @@
+{
+  "argv": [
+    "cargo",
+    "clippy",
+    "--locked",
+    "--all-targets",
+    "--target",
+    "x86_64-unknown-linux-gnu",
+    "--manifest-path",
+    "examples/host-stream-diagnostic/Cargo.toml",
+    "--",
+    "-D",
+    "warnings"
+  ],
+  "cwd": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-scope",
+  "environment": {
+    "RUSTUP_TOOLCHAIN": "1.95.0",
+    "CARGO_TARGET_DIR": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-run/target"
+  },
+  "started_utc": "2026-10-23T17:28:55.254452+00:00",
+  "elapsed_seconds": 0.1811648542061448,
+  "exit_code": 0,
+  "stdout": "02-clippy.stdout.log",
+  "stderr": "02-clippy.stderr.log"
+}

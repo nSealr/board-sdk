@@ -1,0 +1,34 @@
+{
+  "source_commit": "322d2467b2bcc79064ea8771d2eeb09420913a4d",
+  "git_archive_sha256": "8036fde194b1fd03de8590831d9f7428b5583d3c2f25b5e79b93bef7b136289a",
+  "git_archive_bytes": 30720,
+  "export_directory": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-standalone/export",
+  "only_four_package_source_inputs": true,
+  "not_git_checkout": true,
+  "inputs": [
+    {
+      "path": "Cargo.toml",
+      "bytes": 302,
+      "sha256": "8857f91492474e60a6e018c6687e095e6d55de196f0cb1cb97051942946ffab3",
+      "equal_current_authored_source": true
+    },
+    {
+      "path": "Cargo.lock",
+      "bytes": 396,
+      "sha256": "01e5640ac5fbee79ece4146901e7f1eb972a64d8c17499f6b326f21d118b5dcb",
+      "equal_current_authored_source": true
+    },
+    {
+      "path": "rust-toolchain.toml",
+      "bytes": 86,
+      "sha256": "7d21c66a15f41bad66b82ed06a289f5dc8a6e3751951d2696bbf20ce296f2b0f",
+      "equal_current_authored_source": true
+    },
+    {
+      "path": "src/main.rs",
+      "bytes": 16772,
+      "sha256": "cd36d33330990afb17f36564ac262d01936b5e7f00e32d9e42edd37249243b3c",
+      "equal_current_authored_source": true
+    }
+  ]
+}

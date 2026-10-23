@@ -1,0 +1,5 @@
+ Downloading crates ...
+  Downloaded embedded-io v0.7.1
+   Compiling embedded-io v0.7.1
+   Compiling host-stream-diagnostic v0.1.0 (/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-scope/examples/host-stream-diagnostic)
+    Finished `release` profile [optimized] target(s) in 0.46s
