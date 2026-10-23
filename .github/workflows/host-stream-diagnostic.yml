@@ -1,0 +1,38 @@
+name: Host stream diagnostic
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  host-stream-diagnostic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: examples/host-stream-diagnostic
+    env:
+      RUSTUP_TOOLCHAIN: "1.95.0"
+      CARGO_TARGET_DIR: ${{ runner.temp }}/host-stream-diagnostic-target
+      CARGO_TERM_COLOR: never
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
+        with:
+          persist-credentials: false
+      - name: Install the existing pinned Rust toolchain
+        run: |
+          rustup toolchain install 1.95.0 --profile minimal --component rustfmt --component clippy
+          rustc -Vv
+          cargo -V
+      - name: Check formatting
+        run: cargo fmt -- --check
+      - name: Check the actual consumer
+        run: cargo clippy --locked --all-targets --target x86_64-unknown-linux-gnu -- -D warnings
+      - name: Build before the runtime watchdog
+        run: cargo build --locked --release --target x86_64-unknown-linux-gnu
+      - name: Run all four real stream cases
+        run: timeout --signal=TERM --kill-after=2s 30s "$CARGO_TARGET_DIR/x86_64-unknown-linux-gnu/release/host-stream-diagnostic"

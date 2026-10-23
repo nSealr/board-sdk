@@ -1,0 +1,5 @@
+host-stream-diagnostic v0.1.0 (/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-standalone/export)
+└── embedded-io feature "std"
+    ├── embedded-io v0.7.1
+    └── embedded-io feature "alloc"
+        └── embedded-io v0.7.1

@@ -1,0 +1,13 @@
+{
+  "command": "python3 YAML BaseLoader parse and admitted job/trigger/pin structural checks",
+  "exit_code": 0,
+  "workflow": ".github/workflows/host-stream-diagnostic.yml",
+  "checks": [
+    "valid YAML mapping",
+    "exactly one admitted job",
+    "PR and main push only; no schedule",
+    "accepted immutable checkout action pin",
+    "Rust1.95.0 environment"
+  ],
+  "limit": "static configuration check only; no hosted action/job executed"
+}

@@ -1,0 +1,338 @@
+{
+  "task": "B01",
+  "kind": "author result: admitted real host stream integration consumer only",
+  "recorded_utc": "2026-10-23T17:35:13.871178+00:00",
+  "author": "/root/sdk_dependency_probe",
+  "status": "AUTHOR_PASS_awaiting_distinct_final_review_and_root_integration",
+  "exact_candidate": "Enclosing Git commit binds this result and package; no self-hash/future review claim.",
+  "base_sdk_main": "9ad3634dff5eeb3d578cfb7afc3a7680abcaa12a",
+  "scope_candidate": "7498600d280b11f3d28777ef653037b7fd8328eb",
+  "distinct_scope_review_and_admission": "e3cdc8238a1012dca5ae4f5d80f70e35e56998a2",
+  "first_implementation_and_runtime_source": "322d2467b2bcc79064ea8771d2eeb09420913a4d",
+  "implementation_inputs_unchanged_after_early_smoke": true,
+  "acceptance": {
+    "early_build": 0,
+    "early_four_case_runtime": 0,
+    "author_fmt": 0,
+    "author_clippy_warnings_denied": 0,
+    "clean_standalone_commands": 12,
+    "clean_standalone_four_case_runtime": 0,
+    "ci_yaml_static_structure": 0,
+    "git_diff_cached_check": 0
+  },
+  "real_runtime_results": [
+    "Both endpoints configured/ready before request, literal PING/PONG8bytes and publication only after real joins.",
+    "Silent100ms read: rawWouldBlock/upstreamOther/errno11, no response.",
+    "Cancel after observedB01prefix: localshutdown, nextread0/UnexpectedEof, no response; a timeout cannot pass.",
+    "Peerwritehalfclose afterB01prefix: read0/UnexpectedEof, no response.",
+    "Each case observes peerEOF, closes/drops all handles and actually joins consumer+peer before PASS or publication; no failed socket/request replay."
+  ],
+  "source_and_build_proof": {
+    "toolchain": "Rust/Cargo1.95.0; compiler59807616e1fa2540724bfbac14d7976d7e4a3860",
+    "target": "x86_64-unknown-linux-gnu",
+    "kernel": "Linux6.12.101+deb13-amd64",
+    "first_elf": {
+      "path": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-run/target/x86_64-unknown-linux-gnu/release/host-stream-diagnostic",
+      "bytes": 622320,
+      "sha256": "8051e97d5af7182ef41aaa40eac301e91f8e20aa7b88eabcc838598576cea005"
+    },
+    "standalone_elf": {
+      "path": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-standalone/target/x86_64-unknown-linux-gnu/release/host-stream-diagnostic",
+      "bytes": 622384,
+      "sha256": "b1df35d79403759c6288df56afcb837649eb13764e10732b4abbc7a3fa779b89",
+      "source_commit": "322d2467b2bcc79064ea8771d2eeb09420913a4d",
+      "note": "actual standalone export binary; no equality/reproducibility claim for differently pathed builds"
+    },
+    "standalone": "Fresh gitarchive export of only4source inputs, empty CargoHOME and target; all source hashes match authored inputs.",
+    "dependency": "Only registry embedded-io=0.7.1, std/alloc enabled; actual archive/source/manifest/license bytes verified; no Nostr/sibling/path/optionaldefmt dependency."
+  },
+  "failure_record": {
+    "build_runtime_fmt_clippy_failures": [],
+    "metadata_correction": "First build receipt UTC timestamp was captured after completion and is labelled completed_utc, with measured elapsed and explicit note. No invented exact start UTC or changed product result.",
+    "timing_oracles_unchanged": "100ms silence,1s otherIO,3s controls,30s external runtimewatchdog, build completed before runtime watchdog."
+  },
+  "regression": {
+    "path": ".github/workflows/host-stream-diagnostic.yml",
+    "single_job": true,
+    "triggers": "PR/main push only; no schedule",
+    "checkout_pin": "fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09",
+    "hosted_execution": "not started by author; root owns PR/CI/integration"
+  },
+  "parent_criteria_closed": 0,
+  "all_B01_B02_B03_criteria_open": true,
+  "physical_or_release_evidence": false,
+  "not_claimed": [
+    "Board/MCU/SE/electrical tuple or driver support",
+    "entropy/key custody/consent/reset/owner lifecycle assurance",
+    "hardware or future-drop cancellation, hard or generic total-operation deadlines",
+    "hostile-application isolation or any physical/release criterion",
+    "cross-build binary reproducibility or hostedCI/adoption before root verification"
+  ],
+  "pending": [
+    "Distinct exact final implementation/evidence/CI-configuration review and independent smoke replay.",
+    "Root-owned hostedPR/main checks and ordinary integration if accepted.",
+    "Existing H04/B02/B03 and all physical/lifecycle/electrical gates remain open."
+  ],
+  "artifact_bindings": [
+    {
+      "path": ".github/workflows/host-stream-diagnostic.yml",
+      "bytes": 1281,
+      "sha256": "628105df5e15c2fade09530f63af825358e6aea08811d88490a031d7cfc1f668"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3150,
+      "sha256": "ade2d494a652f7aa13675b392cac0fc65223d3c3ad0a0a7ffecb4e60a36e7412"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe-acceptance.json",
+      "bytes": 4447,
+      "sha256": "16a5aea7b3aca29010b4c15130d40c6ced1a3451453cf38094b5f06f73a95fa2"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe-contract.md",
+      "bytes": 8786,
+      "sha256": "66959306481c28eec0c388c487c30f8e5d62984076e891a00d1980b578300c06"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/README.md",
+      "bytes": 5956,
+      "sha256": "8edd7cda656eeb009b48365aa4d7c9a87fbdf34ed4bd73fb90f4e25c25380af6"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/author-checks/01-fmt.json",
+      "bytes": 548,
+      "sha256": "0c995293815ee7eb9d4a1dfdc702293f7f09139a5ff93fa088be2cc0332ca5ce"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/author-checks/01-fmt.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/author-checks/01-fmt.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/author-checks/02-clippy.json",
+      "bytes": 651,
+      "sha256": "11411d44deea93f543502fca0a13909fab36b16483f32ee99d0da0abf91ad99f"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/author-checks/02-clippy.stderr.log",
+      "bytes": 244,
+      "sha256": "6a1e8f8a07200d7a0fbc63d55baee3ac596c45c040dc3b340ab45cf4d590edfc"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/author-checks/02-clippy.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/author-checks/workflow.json",
+      "bytes": 447,
+      "sha256": "f23ef3df68778a50011d2db083047d728f8303445fe809871eafd0964c77c752"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/dependency-resolution.json",
+      "bytes": 2441,
+      "sha256": "6035d0bdbb4feaabf63c7a7d3093a872a77e71a19a65fd135a4a60bb6ac03734"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/early-smoke/01-build.json",
+      "bytes": 962,
+      "sha256": "21b8e49c4042206db9a4b488a5a79baadc6310fbaead4848dad7339a42a904b3"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/early-smoke/01-build.stderr.log",
+      "bytes": 290,
+      "sha256": "a74f4d327f853ecaf27036eb93a91e1cd0a93fd92b7225001d88b9d0ad6b9e7a"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/early-smoke/01-build.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/early-smoke/02-run.json",
+      "bytes": 588,
+      "sha256": "9f29f2fe5bc6adc2f62baafca96b58e0c3a88a299eb5c59ec542da150de54e23"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/early-smoke/02-run.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/early-smoke/02-run.stdout.log",
+      "bytes": 3222,
+      "sha256": "ac2f9d5e99a29238f4dea843bcc155a938ce9a88c5b750862611eef900d801d3"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/early-smoke/inputs.json",
+      "bytes": 2282,
+      "sha256": "776f4db0552ff341126096783598f80332b236739950fab7db24d127a1563556"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/01-git-archive.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/01-git-archive.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/02-extract.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/02-extract.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/03-rustc.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/03-rustc.stdout.log",
+      "bytes": 196,
+      "sha256": "4fdff2578428e9c5c08ddd7a0d3079c1a106b1cdaa46e73e46f7cd32b0fb9cad"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/04-cargo.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/04-cargo.stdout.log",
+      "bytes": 36,
+      "sha256": "c10ec31b8c6e6e2693cf65fc1971b41edbc3da1ae7db6f9f3f36c4823f8dcab5"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/05-kernel.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/05-kernel.stdout.log",
+      "bytes": 44,
+      "sha256": "5fec7f9f60ef26a8489cc76db2a83267bf5d0d9f39492434d341350ee6b7fea0"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/06-metadata.stderr.log",
+      "bytes": 85,
+      "sha256": "cb310a9cf4ca7deca2f9a1fb274809e45ac28bdff8402f8abc341b1060dc1377"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/06-metadata.stdout.log",
+      "bytes": 3763,
+      "sha256": "197774f8de195c5e90fdcd07c4c99f796111a2d880f8049dc65642bd542b2429"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/07-features.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/07-features.stdout.log",
+      "bytes": 255,
+      "sha256": "15322c24d6f81a6e9a7a9c403d1803dad29b67599b15d77124b3e47a81797e39"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/08-fmt.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/08-fmt.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/09-clippy.stderr.log",
+      "bytes": 224,
+      "sha256": "d5b4458ba58ac1298e448be0fe2eefeb39928715e8254a3698afb4f4aae5e9e6"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/09-clippy.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/10-build.stderr.log",
+      "bytes": 214,
+      "sha256": "c063e945b6c62dfc13f05e8293ffa73512bb75206063038d326473802b7ddc31"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/10-build.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/11-run.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/11-run.stdout.log",
+      "bytes": 3223,
+      "sha256": "6e6d63f6388a72497efbed67141ddeaaacaf05995b4518d07f009a4dfcfe6857"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/12-file.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/12-file.stdout.log",
+      "bytes": 340,
+      "sha256": "f30df69a2822fee3df871618308f22e787f2697dec3f03d645aec88a1b86476c"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/binary.json",
+      "bytes": 419,
+      "sha256": "c99e5a3827573b1bfd92eb893900b6991b10fdd0742cdf24bd89f7289b779d30"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/commands.json",
+      "bytes": 6277,
+      "sha256": "75ddbb0278edb9a7c52f8c2fc2e26a38b123d4ee542f9161ac8327cf19968edf"
+    },
+    {
+      "path": "docs/restart/B01/host-stream-probe/standalone/export.json",
+      "bytes": 1144,
+      "sha256": "ab41f3af482ab113865757951f33d4802740c3621c3170d98e6d7f4ddb5c7aac"
+    },
+    {
+      "path": "examples/host-stream-diagnostic/Cargo.lock",
+      "bytes": 396,
+      "sha256": "01e5640ac5fbee79ece4146901e7f1eb972a64d8c17499f6b326f21d118b5dcb"
+    },
+    {
+      "path": "examples/host-stream-diagnostic/Cargo.toml",
+      "bytes": 302,
+      "sha256": "8857f91492474e60a6e018c6687e095e6d55de196f0cb1cb97051942946ffab3"
+    },
+    {
+      "path": "examples/host-stream-diagnostic/README.md",
+      "bytes": 3466,
+      "sha256": "f8872b19fcb46a81eeeba331b9a5fef11dce7e2e6deac35066beabc41c68d7ea"
+    },
+    {
+      "path": "examples/host-stream-diagnostic/rust-toolchain.toml",
+      "bytes": 86,
+      "sha256": "7d21c66a15f41bad66b82ed06a289f5dc8a6e3751951d2696bbf20ce296f2b0f"
+    },
+    {
+      "path": "examples/host-stream-diagnostic/src/main.rs",
+      "bytes": 16772,
+      "sha256": "cd36d33330990afb17f36564ac262d01936b5e7f00e32d9e42edd37249243b3c"
+    }
+  ]
+}

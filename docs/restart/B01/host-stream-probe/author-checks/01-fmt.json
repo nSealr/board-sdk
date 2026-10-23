@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "cargo",
+    "fmt",
+    "--manifest-path",
+    "examples/host-stream-diagnostic/Cargo.toml",
+    "--",
+    "--check"
+  ],
+  "cwd": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-scope",
+  "environment": {
+    "RUSTUP_TOOLCHAIN": "1.95.0",
+    "CARGO_TARGET_DIR": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-run/target"
+  },
+  "started_utc": "2026-10-23T17:28:55.224396+00:00",
+  "elapsed_seconds": 0.029958314262330532,
+  "exit_code": 0,
+  "stdout": "01-fmt.stdout.log",
+  "stderr": "01-fmt.stderr.log"
+}

@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "cargo",
+    "build",
+    "--locked",
+    "--release",
+    "--target",
+    "x86_64-unknown-linux-gnu",
+    "--manifest-path",
+    "examples/host-stream-diagnostic/Cargo.toml"
+  ],
+  "cwd": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-scope",
+  "elapsed_seconds": 0.47683472093194723,
+  "exit_code": 0,
+  "stdout": "01-build.stdout.log",
+  "stderr": "01-build.stderr.log",
+  "executable": {
+    "path": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-run/target/x86_64-unknown-linux-gnu/release/host-stream-diagnostic",
+    "bytes": 622320,
+    "sha256": "8051e97d5af7182ef41aaa40eac301e91f8e20aa7b88eabcc838598576cea005"
+  },
+  "completed_utc": "2026-10-23T17:28:20.710901+00:00",
+  "timestamp_note": "This first build receipt captured the UTC timestamp after subprocess completion. elapsed_seconds is measured around the build; an exact start UTC was not captured. Later command receipts capture start before launch."
+}

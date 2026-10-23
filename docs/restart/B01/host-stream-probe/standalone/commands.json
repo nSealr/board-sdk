@@ -1,0 +1,199 @@
+{
+  "source_commit": "322d2467b2bcc79064ea8771d2eeb09420913a4d",
+  "environment": {
+    "RUSTUP_TOOLCHAIN": "1.95.0",
+    "CARGO_HOME": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-standalone/cargo-home",
+    "CARGO_TARGET_DIR": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-standalone/target"
+  },
+  "fresh_export_and_cargo_home": true,
+  "commands": [
+    {
+      "name": "01-git-archive",
+      "argv": [
+        "git",
+        "archive",
+        "--format=tar",
+        "--output",
+        "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-standalone/package.tar",
+        "322d2467b2bcc79064ea8771d2eeb09420913a4d",
+        "examples/host-stream-diagnostic"
+      ],
+      "cwd": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-scope",
+      "started_utc": "2026-10-23T17:31:40.309223+00:00",
+      "elapsed_seconds": 0.0019127260893583298,
+      "exit_code": 0,
+      "stdout": "01-git-archive.stdout.log",
+      "stderr": "01-git-archive.stderr.log"
+    },
+    {
+      "name": "02-extract",
+      "argv": [
+        "tar",
+        "--extract",
+        "--file",
+        "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-standalone/package.tar",
+        "--strip-components=2",
+        "--directory",
+        "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-standalone/export"
+      ],
+      "cwd": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-scope",
+      "started_utc": "2026-10-23T17:31:40.311216+00:00",
+      "elapsed_seconds": 0.000981094315648079,
+      "exit_code": 0,
+      "stdout": "02-extract.stdout.log",
+      "stderr": "02-extract.stderr.log"
+    },
+    {
+      "name": "03-rustc",
+      "argv": [
+        "rustc",
+        "-Vv"
+      ],
+      "cwd": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-standalone/export",
+      "started_utc": "2026-10-23T17:31:40.312615+00:00",
+      "elapsed_seconds": 0.009919152595102787,
+      "exit_code": 0,
+      "stdout": "03-rustc.stdout.log",
+      "stderr": "03-rustc.stderr.log"
+    },
+    {
+      "name": "04-cargo",
+      "argv": [
+        "cargo",
+        "-V"
+      ],
+      "cwd": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-standalone/export",
+      "started_utc": "2026-10-23T17:31:40.322658+00:00",
+      "elapsed_seconds": 0.006128515116870403,
+      "exit_code": 0,
+      "stdout": "04-cargo.stdout.log",
+      "stderr": "04-cargo.stderr.log"
+    },
+    {
+      "name": "05-kernel",
+      "argv": [
+        "uname",
+        "-srmo"
+      ],
+      "cwd": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-standalone/export",
+      "started_utc": "2026-10-23T17:31:40.328909+00:00",
+      "elapsed_seconds": 0.0009135575965046883,
+      "exit_code": 0,
+      "stdout": "05-kernel.stdout.log",
+      "stderr": "05-kernel.stderr.log"
+    },
+    {
+      "name": "06-metadata",
+      "argv": [
+        "cargo",
+        "metadata",
+        "--locked",
+        "--format-version",
+        "1"
+      ],
+      "cwd": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-standalone/export",
+      "started_utc": "2026-10-23T17:31:40.329950+00:00",
+      "elapsed_seconds": 0.16734711546450853,
+      "exit_code": 0,
+      "stdout": "06-metadata.stdout.log",
+      "stderr": "06-metadata.stderr.log"
+    },
+    {
+      "name": "07-features",
+      "argv": [
+        "cargo",
+        "tree",
+        "--locked",
+        "--edges",
+        "features"
+      ],
+      "cwd": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-standalone/export",
+      "started_utc": "2026-10-23T17:31:40.497432+00:00",
+      "elapsed_seconds": 0.02736953552812338,
+      "exit_code": 0,
+      "stdout": "07-features.stdout.log",
+      "stderr": "07-features.stderr.log"
+    },
+    {
+      "name": "08-fmt",
+      "argv": [
+        "cargo",
+        "fmt",
+        "--",
+        "--check"
+      ],
+      "cwd": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-standalone/export",
+      "started_utc": "2026-10-23T17:31:40.524925+00:00",
+      "elapsed_seconds": 0.029610362835228443,
+      "exit_code": 0,
+      "stdout": "08-fmt.stdout.log",
+      "stderr": "08-fmt.stderr.log"
+    },
+    {
+      "name": "09-clippy",
+      "argv": [
+        "cargo",
+        "clippy",
+        "--locked",
+        "--all-targets",
+        "--target",
+        "x86_64-unknown-linux-gnu",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "cwd": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-standalone/export",
+      "started_utc": "2026-10-23T17:31:40.554670+00:00",
+      "elapsed_seconds": 0.16904227435588837,
+      "exit_code": 0,
+      "stdout": "09-clippy.stdout.log",
+      "stderr": "09-clippy.stderr.log"
+    },
+    {
+      "name": "10-build",
+      "argv": [
+        "cargo",
+        "build",
+        "--locked",
+        "--release",
+        "--target",
+        "x86_64-unknown-linux-gnu"
+      ],
+      "cwd": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-standalone/export",
+      "started_utc": "2026-10-23T17:31:40.723864+00:00",
+      "elapsed_seconds": 0.3742203265428543,
+      "exit_code": 0,
+      "stdout": "10-build.stdout.log",
+      "stderr": "10-build.stderr.log"
+    },
+    {
+      "name": "11-run",
+      "argv": [
+        "timeout",
+        "--signal=TERM",
+        "--kill-after=2s",
+        "30s",
+        "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-standalone/target/x86_64-unknown-linux-gnu/release/host-stream-diagnostic"
+      ],
+      "cwd": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-standalone/export",
+      "started_utc": "2026-10-23T17:31:41.098993+00:00",
+      "elapsed_seconds": 0.10449450928717852,
+      "exit_code": 0,
+      "stdout": "11-run.stdout.log",
+      "stderr": "11-run.stderr.log"
+    },
+    {
+      "name": "12-file",
+      "argv": [
+        "file",
+        "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-standalone/target/x86_64-unknown-linux-gnu/release/host-stream-diagnostic"
+      ],
+      "cwd": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-standalone/export",
+      "started_utc": "2026-10-23T17:31:41.203648+00:00",
+      "elapsed_seconds": 0.0031800754368305206,
+      "exit_code": 0,
+      "stdout": "12-file.stdout.log",
+      "stderr": "12-file.stderr.log"
+    }
+  ]
+}

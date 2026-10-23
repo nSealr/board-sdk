@@ -1,0 +1,74 @@
+{
+  "phase": "first source/input freeze before any consumer build/runtime",
+  "recorded_utc": "2026-10-23T17:27:58.883562+00:00",
+  "source_commit": "322d2467b2bcc79064ea8771d2eeb09420913a4d",
+  "scope_review_admission": "e3cdc8238a1012dca5ae4f5d80f70e35e56998a2",
+  "cwd": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-scope",
+  "environment": {
+    "RUSTUP_TOOLCHAIN": "1.95.0",
+    "CARGO_TARGET_DIR": "/home/tux/nsealr/.restart-tools/goal/b01-stream-consumer-run/target"
+  },
+  "commands": [
+    {
+      "argv": [
+        "rustc",
+        "-Vv"
+      ],
+      "exit_code": 0,
+      "stdout": "rustc 1.95.0 (59807616e 2026-04-14)\nbinary: rustc\ncommit-hash: 59807616e1fa2540724bfbac14d7976d7e4a3860\ncommit-date: 2026-04-14\nhost: x86_64-unknown-linux-gnu\nrelease: 1.95.0\nLLVM version: 22.1.2\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "cargo",
+        "-V"
+      ],
+      "exit_code": 0,
+      "stdout": "cargo 1.95.0 (f2d3ce0bd 2026-03-21)\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "uname",
+        "-srmo"
+      ],
+      "exit_code": 0,
+      "stdout": "Linux 6.12.101+deb13-amd64 x86_64 GNU/Linux\n",
+      "stderr": ""
+    }
+  ],
+  "inputs": [
+    {
+      "path": "examples/host-stream-diagnostic/Cargo.toml",
+      "bytes": 302,
+      "sha256": "8857f91492474e60a6e018c6687e095e6d55de196f0cb1cb97051942946ffab3"
+    },
+    {
+      "path": "examples/host-stream-diagnostic/Cargo.lock",
+      "bytes": 396,
+      "sha256": "01e5640ac5fbee79ece4146901e7f1eb972a64d8c17499f6b326f21d118b5dcb"
+    },
+    {
+      "path": "examples/host-stream-diagnostic/rust-toolchain.toml",
+      "bytes": 86,
+      "sha256": "7d21c66a15f41bad66b82ed06a289f5dc8a6e3751951d2696bbf20ce296f2b0f"
+    },
+    {
+      "path": "examples/host-stream-diagnostic/src/main.rs",
+      "bytes": 16772,
+      "sha256": "cd36d33330990afb17f36564ac262d01936b5e7f00e32d9e42edd37249243b3c"
+    }
+  ],
+  "frozen_oracle": {
+    "request_hex": "42303150494e470a",
+    "response_hex": "423031504f4e470a",
+    "partial_hex": "423031",
+    "cases": 4
+  },
+  "initial_preparation": {
+    "cargo_fmt": 0,
+    "cargo_generate_lockfile": 0,
+    "git_diff_cached_check": 0,
+    "result": "one exact registry dependency; no code compiled/executed before this receipt"
+  }
+}

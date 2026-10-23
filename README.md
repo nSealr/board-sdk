@@ -22,6 +22,12 @@ The initial task ownership is B01–B03 in the [project task graph](https://gith
 
 B01 documentary work describes proposed [service and dependency boundaries](docs/restart/B01/api-and-dependencies.md) and [owner lifecycle requirements](docs/restart/B01/lifecycle.md). Electrical pinning, service implementation and physical qualification remain open; these documents do not claim supported hardware or an implemented SDK.
 
+The [standalone Linux stream diagnostic](examples/host-stream-diagnostic/README.md)
+is the first real non-Nostr interface consumer: four host socket cases exercise
+request/response, timeout, local cancellation and partial EOF. Its
+[execution evidence](docs/restart/B01/host-stream-probe/README.md) is limited to
+host stream integration. Board support and all B01/B02/B03 criteria remain open.
+
 ## Security boundaries
 
 - No Nostr-specific account/event/policy semantics in the platform.
