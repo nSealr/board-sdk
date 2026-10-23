@@ -1,0 +1,48 @@
+{
+  "verdict": "ADMITTED_limited_B01_real_host_stream_probe_only",
+  "scope_candidate": "7498600d280b11f3d28777ef653037b7fd8328eb",
+  "contract": "docs/restart/B01/host-stream-probe-contract.md",
+  "contract_sha256": "66959306481c28eec0c388c487c30f8e5d62984076e891a00d1980b578300c06",
+  "reviewer": "/root, distinct from author /root/sdk_dependency_probe",
+  "coordinator_admission": true,
+  "purpose": "One useful standalone non-Nostr diagnostic consumer of already-surveyed embedded-io0.7.1 using real Linux UnixStream endpoints; no SDK driver or exported platform API. General Rust rewrites remain deferred.",
+  "primary_inputs_verified": [
+    "Exact official crate archive16035bytes SHA9eb1aa714776b75c7e67e1da744b81a129b3ff919c8712b5e1b32252c1f07cc7 and lib.rs SHA1077dd3ed8cc4c44d2da1ef5b1e6f4322191b3e25c12407ace75df55b9083963 independently fetched/read by root.",
+    "ReadExactError::UnexpectedEof after nonempty-buffer read0; Write must not return0 for nonempty input and write_all would panic. Small wrapper must emit real WriteZero instead.",
+    "std::io::ErrorKind::WouldBlock maps to upstream Other via the exact From match; preserve raw kind, no TimedOut rewrite.",
+    "Rust std source compiler59807616 exact UnixStream timeout/socket/shutdown/clone API checked; Linux SO_RCVTIMEO source confirms no-data EAGAIN/EWOULDBLOCK. No1.96 docs inherited into1.95 proof."
+  ],
+  "frozen_oracle": {
+    "request_hex": "42303150494e470a",
+    "response_hex": "423031504f4e470a",
+    "partial_hex": "423031",
+    "cases": [
+      "start+request+response",
+      "real silence timeout with rawWouldBlock/upstreamOther",
+      "local shutdown only after observedpartial; nextread0/UnexpectedEof, timeout fails cancellation",
+      "peerwritehalfclose afterpartial; EOF/no publication/actual closure+joins"
+    ]
+  },
+  "timing": "Keep contract100ms silence read,1s other I/O,3s control waits,30s process watchdog. Build before timed execution; compile time is not the runtime watchdog. These are only host experiment inputs, no target or hard-time guarantee.",
+  "writable_paths": [
+    "examples/host-stream-diagnostic/Cargo.toml",
+    "examples/host-stream-diagnostic/Cargo.lock",
+    "examples/host-stream-diagnostic/rust-toolchain.toml",
+    "examples/host-stream-diagnostic/src/main.rs",
+    "examples/host-stream-diagnostic/README.md",
+    "docs/restart/B01/host-stream-probe/",
+    "README.md (only accurate navigation/status of this probe)",
+    ".github/workflows/host-stream-diagnostic.yml (single minimal CI job for this actual consumer)"
+  ],
+  "automatic_regression": "SDK currently has no CI. Add one finite PR/main job for this real example only, reusing the already-reviewed immutable checkout action pin; pin Rust1.95.0, use locked resolution, fmt/clippy and execute all4cases automatically. No scheduled service/framework/global pipeline redesign; no hosted trigger until coherent package and independent review.",
+  "implementation_conditions": [
+    "One publish=false binary package with only embedded-io=0.7.1 std feature, no Nostr/sibling/path dependencies or universalHAL.",
+    "Freeze source/expected bytes before implementation; first smoke uses real peer and actual kernel I/O before final packaging. Record genuine failures without relaxing cases/kinds/timeouts.",
+    "Only complete expected frame publishes. Partial/error/cancel retains ownership until real thread joins and closes; no detached workers or early buffer/socket reuse.",
+    "Distinguish cancellation byshutdown plus actualread0/EOF from fallback timeout. All thread/channel/control failures are failed smoke.",
+    "Build/run from clean standalone export and record toolchain/target/kernel/lock/features/source/binary/argv/raw outputs. Existing recipe reuses sufficient commands, not new verifiers.",
+    "Coherent implementation/proof/limits/docs before distinct affected review. Root owns hostedCI/integration and actual-main acceptance."
+  ],
+  "unchanged": "All four B01 criteria remain open, B02/H04/physical gates unchanged. No board/silicon/electrical tuple/SE/entropy/custody/consent/reset/owner lifecycle or release claim; no new selected driver.",
+  "reader_note": "Initial root raw-GitHub lookup used wrong organization, then the correct raw URL was unavailable to the viewer. Root used the already-registered exact official version archive instead, verified its hash and inspected the actual member; no source/expectation changed."
+}
