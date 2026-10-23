@@ -1,0 +1,125 @@
+{
+  "verdict": "PASS_scoped_real_Linux_host_stream_consumer_only",
+  "findings": [],
+  "reviewer": "/root/a02_resume",
+  "author": "/root/sdk_dependency_probe",
+  "candidate": "a14c0391457c6291899f650caef308b3694b44e8",
+  "tree": "eff7e17253e20030cd33fd771d58dbbfc8104980",
+  "contract": "7498600d280b11f3d28777ef653037b7fd8328eb",
+  "admission": "e3cdc8238a1012dca5ae4f5d80f70e35e56998a2",
+  "unchanged_implementation_source": "322d2467b2bcc79064ea8771d2eeb09420913a4d",
+  "reviewed_source_sha256": "cd36d33330990afb17f36564ac262d01936b5e7f00e32d9e42edd37249243b3c",
+  "author_artifact_bindings_verified": 52,
+  "checks": [
+    {
+      "id": "frozen-oracle",
+      "result": "PASS",
+      "evidence": "Full source read against749860/e3cdc; unchanged literal8-byte request/response and exact partial-prefix semantics."
+    },
+    {
+      "id": "upstream-closure",
+      "result": "PASS",
+      "evidence": "Exact official9eb archive; real1077lib, std/alloc only,2resolvednodes; four original compiled input hashes unchanged."
+    },
+    {
+      "id": "ready-and-actual-IO",
+      "result": "PASS",
+      "evidence": "Both Ready before start; real UnixStream and separate std::io literal peer; upstream helpers invoked."
+    },
+    {
+      "id": "timeout-cause",
+      "result": "PASS",
+      "evidence": "100ms policy readback; actual100591us WouldBlock/Other/errno11; no TimedOut normalization."
+    },
+    {
+      "id": "cancel-cause",
+      "result": "PASS",
+      "evidence": "Actual completed read3 precedes shutdownBoth; subsequent read0 and UnexpectedEof; fallback timeout cannot satisfy guard."
+    },
+    {
+      "id": "partial-EOF",
+      "result": "PASS",
+      "evidence": "Peer half-close after literalB01; read3/0, UnexpectedEof and no response."
+    },
+    {
+      "id": "ownership-and-publication",
+      "result": "PASS",
+      "evidence": "New pair per operation; buffer private; both real joins after close/drop before response publication; no partial or retry/reuse success."
+    },
+    {
+      "id": "independent-default-runtime",
+      "result": "PASS",
+      "evidence": "One fresh export, one locked/offline release build Linux1.95, one default4-case smoke exits0,8threadjoins."
+    },
+    {
+      "id": "automatic-regression",
+      "result": "PASS",
+      "evidence": "Single parsed PR/main job: admitted checkoutSHA,1.95,fmt/clippy/lockedrelease/defaultfourcases watchdog; no skip/continue-on-error."
+    },
+    {
+      "id": "scope-and-claims",
+      "result": "PASS",
+      "evidence": "Only finite Linux consumer; no hardware/SDKdriver/API/Nostr/taskrelease/adoption claim."
+    }
+  ],
+  "independent_binary": {
+    "path": "/home/tux/nsealr/.restart-tools/goal/b01-host-stream-consumer-review-runtime/target/x86_64-unknown-linux-gnu/release/host-stream-diagnostic",
+    "bytes": 622384,
+    "sha256": "1b40f6d44a8363b6e043e7962856f7ae8bf17524c5525b771159becffbaa6dfc"
+  },
+  "independent_builds": 1,
+  "independent_runtime_invocations": 1,
+  "independent_cases": 4,
+  "actual_endpoint_joins": 8,
+  "commands": [
+    {
+      "name": "01-rustc",
+      "exit_code": 0
+    },
+    {
+      "name": "02-cargo",
+      "exit_code": 0
+    },
+    {
+      "name": "03-kernel",
+      "exit_code": 0
+    },
+    {
+      "name": "04-metadata",
+      "exit_code": 0
+    },
+    {
+      "name": "05-build",
+      "exit_code": 0
+    },
+    {
+      "name": "06-file",
+      "exit_code": 0
+    },
+    {
+      "name": "07-smoke",
+      "exit_code": 0
+    }
+  ],
+  "failures": [],
+  "hosted_ci": "Not executed or observed; configuration/source/runtime default scope reviewed only. Root owns integration.",
+  "report": {
+    "path": "docs/restart/B01/host-stream-probe-review/report.md",
+    "sha256": "f303ae3ea21dcf3dec9f606bbd7b8ec86649f77446a26836d0df0191c0f9e39c"
+  },
+  "proofs": {
+    "preflight.json": "9983c11018d7dffd930fccf4208daa5587a05c44edc225612dde47130b9a09ce",
+    "commands.json": "ffc2b901b0d5826553caab9a01fd75d81c5b42a4f2eb43f7b6a00df94490b97d",
+    "source-checks.json": "a7d435568c76266565a3d637fa77988940e16b7b21c7b8da7fff3265a999d5a2",
+    "07-smoke.stdout.log": "b8cafda770dc688d4b42016ae0923b475829fe0ddb56df4723195bbfa14c802b",
+    "07-smoke.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "limitations": [
+    "Linux host sockets and fixed public bytes only; not a Board driver or exported SDK API.",
+    "No hardware/SE/electrical/entropy/custody/consent/reset/lifecycle/isolation/physical/profile/release qualification.",
+    "Per-I/O timeouts and external watchdog are experiment inputs, not hard or total-operation deadlines.",
+    "OS/thread creation failures and watchdog termination are not exercised by these four successful diagnostic cases.",
+    "Different reviewer ELF hash is preserved; no cross-build reproducibility claim.",
+    "All parent B01/B02/B03 criteria remain open; root hosted checks/adoption still required."
+  ]
+}

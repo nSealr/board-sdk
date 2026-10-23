@@ -1,0 +1,145 @@
+{
+  "candidate": "a14c0391457c6291899f650caef308b3694b44e8",
+  "cwd": "/home/tux/nsealr/.restart-tools/goal/b01-host-stream-consumer-review-runtime/export",
+  "environment": {
+    "RUSTUP_TOOLCHAIN": "1.95.0",
+    "CARGO_HOME": "/home/tux/nsealr/.restart-tools/goal/b01-host-stream-consumer-review-runtime/cargo-home",
+    "CARGO_TARGET_DIR": "/home/tux/nsealr/.restart-tools/goal/b01-host-stream-consumer-review-runtime/target",
+    "CARGO_TERM_COLOR": "never"
+  },
+  "host_compiler_only": "installed1.95.0, no install/fetch/global configuration change",
+  "commands": [
+    {
+      "name": "01-rustc",
+      "argv": [
+        "/home/tux/.cargo/bin/rustc",
+        "-Vv"
+      ],
+      "cwd": "/home/tux/nsealr/.restart-tools/goal/b01-host-stream-consumer-review-runtime/export",
+      "started_utc": "2026-10-23T17:46:06Z",
+      "stdout": "01-rustc.stdout.log",
+      "stdout_sha256": "4fdff2578428e9c5c08ddd7a0d3079c1a106b1cdaa46e73e46f7cd32b0fb9cad",
+      "stderr": "01-rustc.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit_code": 0,
+      "elapsed_seconds": 0.009764784015715122
+    },
+    {
+      "name": "02-cargo",
+      "argv": [
+        "/home/tux/.cargo/bin/cargo",
+        "-V"
+      ],
+      "cwd": "/home/tux/nsealr/.restart-tools/goal/b01-host-stream-consumer-review-runtime/export",
+      "started_utc": "2026-10-23T17:46:06Z",
+      "stdout": "02-cargo.stdout.log",
+      "stdout_sha256": "c10ec31b8c6e6e2693cf65fc1971b41edbc3da1ae7db6f9f3f36c4823f8dcab5",
+      "stderr": "02-cargo.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit_code": 0,
+      "elapsed_seconds": 0.0058913035318255424
+    },
+    {
+      "name": "03-kernel",
+      "argv": [
+        "uname",
+        "-srmo"
+      ],
+      "cwd": "/home/tux/nsealr/.restart-tools/goal/b01-host-stream-consumer-review-runtime/export",
+      "started_utc": "2026-10-23T17:46:06Z",
+      "stdout": "03-kernel.stdout.log",
+      "stdout_sha256": "5fec7f9f60ef26a8489cc76db2a83267bf5d0d9f39492434d341350ee6b7fea0",
+      "stderr": "03-kernel.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit_code": 0,
+      "elapsed_seconds": 0.0006955498829483986
+    },
+    {
+      "name": "04-metadata",
+      "argv": [
+        "/home/tux/.cargo/bin/cargo",
+        "metadata",
+        "--locked",
+        "--offline",
+        "--format-version",
+        "1"
+      ],
+      "cwd": "/home/tux/nsealr/.restart-tools/goal/b01-host-stream-consumer-review-runtime/export",
+      "started_utc": "2026-10-23T17:46:06Z",
+      "stdout": "04-metadata.stdout.log",
+      "stdout_sha256": "b709a6ea1d31ca52f90e0d93afb08e01eab75747db7e986168380550742c11ed",
+      "stderr": "04-metadata.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit_code": 0,
+      "elapsed_seconds": 0.07870456390082836
+    },
+    {
+      "name": "05-build",
+      "argv": [
+        "/home/tux/.cargo/bin/cargo",
+        "build",
+        "--locked",
+        "--offline",
+        "--release",
+        "--target",
+        "x86_64-unknown-linux-gnu"
+      ],
+      "cwd": "/home/tux/nsealr/.restart-tools/goal/b01-host-stream-consumer-review-runtime/export",
+      "started_utc": "2026-10-23T17:46:06Z",
+      "stdout": "05-build.stdout.log",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "05-build.stderr.log",
+      "stderr_sha256": "3e39c8dd8d0aed97ccb3bb9284b123e84e4cc8467da50588d4d06c7812c3f98d",
+      "exit_code": 0,
+      "elapsed_seconds": 0.37706081196665764
+    },
+    {
+      "name": "06-file",
+      "argv": [
+        "file",
+        "/home/tux/nsealr/.restart-tools/goal/b01-host-stream-consumer-review-runtime/target/x86_64-unknown-linux-gnu/release/host-stream-diagnostic"
+      ],
+      "cwd": "/home/tux/nsealr/.restart-tools/goal/b01-host-stream-consumer-review-runtime/export",
+      "started_utc": "2026-10-23T17:46:07Z",
+      "stdout": "06-file.stdout.log",
+      "stdout_sha256": "1bcb1b0c38c4cda338a84e25d3d6c44303369fd45bde97a6cbeadf16ca96166b",
+      "stderr": "06-file.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit_code": 0,
+      "elapsed_seconds": 0.0023745978251099586
+    },
+    {
+      "name": "07-smoke",
+      "argv": [
+        "/usr/bin/timeout",
+        "--signal=TERM",
+        "--kill-after=2s",
+        "30s",
+        "/home/tux/nsealr/.restart-tools/goal/b01-host-stream-consumer-review-runtime/target/x86_64-unknown-linux-gnu/release/host-stream-diagnostic"
+      ],
+      "cwd": "/home/tux/nsealr/.restart-tools/goal/b01-host-stream-consumer-review-runtime/export",
+      "started_utc": "2026-10-23T17:46:07Z",
+      "stdout": "07-smoke.stdout.log",
+      "stdout_sha256": "b8cafda770dc688d4b42016ae0923b475829fe0ddb56df4723195bbfa14c802b",
+      "stderr": "07-smoke.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit_code": 0,
+      "elapsed_seconds": 0.10360425058752298
+    }
+  ],
+  "resolved_dependency": {
+    "manifest": "/home/tux/nsealr/.restart-tools/goal/b01-host-stream-consumer-review-runtime/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/embedded-io-0.7.1/Cargo.toml",
+    "manifest_sha256": "6f021b6c3db0f1e47398e7ff99a9e1852ac96b9dcdd0fd9219095568e725d09a",
+    "lib_sha256": "1077dd3ed8cc4c44d2da1ef5b1e6f4322191b3e25c12407ace75df55b9083963",
+    "features": [
+      "alloc",
+      "std"
+    ],
+    "enabled_dependencies": []
+  },
+  "binary": {
+    "path": "/home/tux/nsealr/.restart-tools/goal/b01-host-stream-consumer-review-runtime/target/x86_64-unknown-linux-gnu/release/host-stream-diagnostic",
+    "bytes": 622384,
+    "sha256": "1b40f6d44a8363b6e043e7962856f7ae8bf17524c5525b771159becffbaa6dfc"
+  }
+}

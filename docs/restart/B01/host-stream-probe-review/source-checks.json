@@ -1,0 +1,46 @@
+{
+  "yaml_parser": "PyYAML 6.0.2 BaseLoader; actual YAML structure, not text grep",
+  "workflow_sha256": "628105df5e15c2fade09530f63af825358e6aea08811d88490a031d7cfc1f668",
+  "workflow_scope": "one PR/main Linux job, accepted checkoutSHA,1.95,lockedbuild before watchdog, no skip/continue-on-error",
+  "runtime_link": "Source main accepts no args and executes four cases in a fixed loop; actual independent default invocation recorded in07-smoke. Static workflow validation is not hostedCI.",
+  "resolved_archive_sha256": "9eb1aa714776b75c7e67e1da744b81a129b3ff919c8712b5e1b32252c1f07cc7",
+  "resolved_members": [
+    {
+      "member": "src/lib.rs",
+      "bytes": 24045,
+      "sha256": "1077dd3ed8cc4c44d2da1ef5b1e6f4322191b3e25c12407ace75df55b9083963",
+      "actual_resolved_equal_archive": true
+    },
+    {
+      "member": "Cargo.toml",
+      "bytes": 1109,
+      "sha256": "6f021b6c3db0f1e47398e7ff99a9e1852ac96b9dcdd0fd9219095568e725d09a",
+      "actual_resolved_equal_archive": true
+    },
+    {
+      "member": "LICENSE-MIT",
+      "bytes": 1067,
+      "sha256": "47674f8b7d98c232c6f81346c4cfe48933d913a9e257d7a522ad9f42e3dd61e1",
+      "actual_resolved_equal_archive": true
+    },
+    {
+      "member": "LICENSE-APACHE",
+      "bytes": 10847,
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "actual_resolved_equal_archive": true
+    }
+  ],
+  "export_sources_unchanged_after_build_and_run": true,
+  "tooling": [
+    {
+      "path": "/home/tux/.rustup/toolchains/1.95.0-x86_64-unknown-linux-gnu/bin/rustc",
+      "sha256": "bff349e72704ff70bc08a234a3847338e797065bbedde5e556808bc87b7bf7c6",
+      "bytes": 644784
+    },
+    {
+      "path": "/home/tux/.rustup/toolchains/1.95.0-x86_64-unknown-linux-gnu/bin/cargo",
+      "sha256": "841072d1d92f9e841d9ba5b0814182a0adf064acf4527cd120967b7bc49dcb66",
+      "bytes": 42185192
+    }
+  ]
+}
